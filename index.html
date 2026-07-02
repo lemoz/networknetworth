@@ -99,6 +99,8 @@
   .err{display:none;margin:12px 2px 0;color:#ffb1b1;background:rgba(255,90,90,.08);border:1px solid rgba(255,90,90,.28);padding:9px 12px;border-radius:10px;font-size:13px}
   .srclink{text-decoration:none;font-size:12px;opacity:.65}
   .srclink:hover{opacity:1}
+  .gl tbody tr{cursor:pointer}
+  .gl tbody tr:hover{background:rgba(255,255,255,.045)}
 </style>
 </head>
 <body>
@@ -116,9 +118,9 @@
     <button class="btn" id="go">Estimate fortune</button>
     <button class="btn ghost" id="lucky">🎲 Surprise me</button>
   </div>
-  <p class="hint">For entertainment only — net worth is estimated by a (totally made-up) model from the handle. Same handle always gives the same result, so it's shareable.</p>
-  <label class="toggle"><input type="checkbox" id="realmode"/> 🛰️ Use real followers (live from X — free, but rate-limited to keep the lights on)</label>
-  <label class="toggle"><input type="checkbox" id="researchmode"/> 🔬 Deep-researched dossiers — evidence-based, sourced estimates (demo: <b>@levelsio</b>)</label>
+  <p class="hint" id="hint">Accounts we've researched get an evidence-based dossier automatically. Everyone else gets the toy model — made-up, deterministic, shareable. All of it is for entertainment.</p>
+  <label class="toggle"><input type="checkbox" id="realmode"/><span>🛰️ Live mode — pull real followers from X (rate-limited)</span></label>
+  <label class="toggle"><input type="checkbox" id="researchmode"/><span>🔬 Dossier mode only — evidence-based boards (best: <b>@cdossman</b>)</span></label>
   <div id="err" class="err"></div>
   <div class="chips" id="chips"></div>
 
@@ -221,11 +223,11 @@ function parseHandle(raw){
 }
 
 /* ---------- the model ---------- */
-function analyze(handle){
+function analyze(handle,realFollowers){
   const rng=mulberry32(hashSeed("@"+handle.toLowerCase()));
-  // follower count: fame roll -> roughly 80 .. 40M
+  // follower count: real when we know it, otherwise fame roll -> roughly 80 .. 40M
   const fame=rng();
-  const followers=Math.max(42,Math.floor(80*Math.pow(10,fame*5.7)));
+  const followers=realFollowers||Math.max(42,Math.floor(80*Math.pow(10,fame*5.7)));
   // how wealthy this particular crowd skews
   const wealthFactor=0.6+rng()*rng()*5; // right-skewed
   const xm=1500, alpha=1.16, cap=90e9;
@@ -274,7 +276,7 @@ function analyze(handle){
 /* ---------- rendering ---------- */
 const $=id=>document.getElementById(id);
 
-function renderGraph(cast){
+function renderGraph(cast,centerHandle){
   const W=560,H=420,cx=W/2,cy=H/2;
   const top=cast.slice(0,12);
   const maxNw=top[0].nw;
@@ -292,8 +294,9 @@ function renderGraph(cast){
       <text class="node-label" x="${x}" y="${y+r+11}" text-anchor="middle">@${f.handle.slice(0,12)}</text>
     </g>`;
   });
+  const centerLabel=centerHandle?("@"+centerHandle).slice(0,11):"YOU";
   const center=`<circle cx="${cx}" cy="${cy}" r="34" fill="url(#cg)" stroke="rgba(255,255,255,.5)" stroke-width="2"/>
-    <text x="${cx}" y="${cy+4}" text-anchor="middle" font-size="11" font-weight="800" fill="#0a0a12">YOU</text>`;
+    <text x="${cx}" y="${cy+4}" text-anchor="middle" font-size="${centerLabel.length>7?9:11}" font-weight="800" fill="#0a0a12">${esc(centerLabel)}</text>`;
   $("graph").innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img">
     <defs><radialGradient id="cg"><stop offset="0%" stop-color="#ffd24a"/><stop offset="100%" stop-color="#ff9d4a"/></radialGradient></defs>
     ${edges}${nodes}${center}</svg>`;
@@ -341,7 +344,7 @@ function renderGlobal(currentHandle){
       .map(p=>({handle:p.handle,total:p.total,followers:p.followers,sub:(p.whales||0)+' 🐋'}));
   }
   if(arr.length===0){$("global").innerHTML=`<tr><td colspan="3" class="empty">No researched accounts yet.</td></tr>`;return;}
-  $("global").innerHTML=arr.map((p,i)=>`<tr class="${currentHandle&&p.handle.toLowerCase()===currentHandle.toLowerCase()?'me':''}">
+  $("global").innerHTML=arr.map((p,i)=>`<tr data-h="${esc(p.handle)}" title="View this board" class="${currentHandle&&p.handle.toLowerCase()===currentHandle.toLowerCase()?'me':''}">
     <td class="rank">${i+1}</td>
     <td><div class="who"><span class="mini-av" style="background:${grad(p.handle)}">${esc(p.handle.slice(0,2).toUpperCase())}</span>
       <span><span class="whoname">@${esc(p.handle)}</span><br/><span class="whoh">${compact(p.followers)} followers · ${esc(p.sub)}</span></span></div></td>
@@ -355,11 +358,12 @@ function paint(d){
   $("pname").textContent=d.displayName;
   $("ver").textContent=d.verified?"✔":"";
   $("phandle").textContent=d.handleLine;
-  $("total").textContent=money(d.totalAll);
+  $("total").textContent=d.totalText||money(d.totalAll);
   $("totsub").textContent=d.totsub;
+  if(d.hint)$("hint").textContent=d.hint;
   const kids=["k0","k1","k2","k3"], vids=["s_followers","s_avg","s_mill","s_whales"];
   d.stats.forEach((s,i)=>{$(kids[i]).textContent=s.k;$(vids[i]).textContent=s.v;});
-  renderGraph(d.cast);
+  renderGraph(d.cast,d.handle);
   renderLeaderboard(d.cast,d.lbCount);
   recordLB({handle:d.handle,totalAll:d.totalAll,followers:d.followers,whalesAll:d.whalesAll});
   renderGlobal(d.handle);
@@ -375,16 +379,23 @@ function personNetWorth(handle){
   return Math.min(9e10, 1500/Math.pow(u,1/1.16)*factor);
 }
 
-// synthetic (no API) — wraps the existing model
+// synthetic (no API) — wraps the model; uses the real follower count when we know it
+function realCountFor(handle){
+  if(!DOSSIERS)return null;
+  const d=DOSSIERS.find(x=>x.handle.toLowerCase()===handle.toLowerCase());
+  return (d&&d.followers)||null;
+}
 function syntheticD(handle){
-  const a=analyze(handle);
+  const realCount=realCountFor(handle);
+  const a=analyze(handle,realCount);
   return {handle,displayName:"@"+handle,
     handleLine:"Own estimated worth: "+money(a.ownWorth),
     verified:a.verified,followers:a.followers,
     totalAll:a.totalAll,avg:a.avg,whalesAll:a.whalesAll,cast:a.cast,
-    stats:[{k:"Followers",v:compact(a.followers)},{k:"Avg per follower",v:money(a.avg)},
+    stats:[{k:realCount?"Followers (real)":"Followers",v:compact(a.followers)},{k:"Avg per follower",v:money(a.avg)},
       {k:"Millionaires",v:a.millAll.toLocaleString()},{k:"🐋 Billionaire whales",v:a.whalesAll.toLocaleString()}],
-    totsub:"across "+a.followers.toLocaleString()+" followers · estimated model"};
+    totsub:"across "+a.followers.toLocaleString()+(realCount?" followers (real count) · invented toy numbers":" followers · estimated model"),
+    hint:"🎲 Toy mode — every number below is invented deterministically from the handle. Same handle, same result, zero facts. For entertainment only."};
 }
 
 // live — real follower list from twitterapi.io, net worth still the fun estimate per real person
@@ -400,20 +411,22 @@ function realD(handle,resp){
   const richest=sample.length?sample[0].nw:0;
   return {handle,
     displayName:(resp.profile&&resp.profile.name)||("@"+handle),
-    handleLine:"@"+handle+" · own est. "+money(personNetWorth(handle)),
+    handleLine:"@"+handle+" · 🛰️ live follower sample",
     verified:!!(resp.profile&&resp.profile.isBlueVerified),
     followers:total,totalAll:avg*total,avg,
+    totalText:"~"+money(avg*total),
     whalesAll:sampleWhale,cast:sample,
-    stats:[{k:"Followers (real)",v:compact(total)},{k:"Avg net worth",v:money(avg)},
+    stats:[{k:"Followers (real)",v:compact(total)},{k:"Avg in sample",v:money(avg)},
       {k:"Richest in sample",v:money(richest)},{k:"🛰️ Live sample",v:String(sample.length)}],
-    totsub:"across "+total.toLocaleString()+" real followers · 🛰️ live sample of "+sample.length};
+    totsub:"naive extrapolation: toy-model average of "+sample.length+" recent followers × "+total.toLocaleString()+" total — treat as a vibe, not a figure",
+    hint:"🛰️ Live mode — the follower list is real (pulled from X), but per-person net worths are still the toy model. Recent followers skew small, so the total is a rough vibe at best."};
 }
 
 // researched — evidence-based dossiers produced by the offline research pipeline
 function verdictPill(verdict,conf){
   const map={supported:["✅","#34e0a1"],plausible:["🟢","#5b9dff"],overstated:["🟠","#ffb155"],unfounded:["⚪","#8b94ad"]};
   const mc=map[verdict]||["⚪","#8b94ad"];
-  return '<span class="title-pill" style="border-color:'+mc[1]+'55;color:'+mc[1]+'">'+mc[0]+' '+esc(verdict)+' · '+esc(conf)+'</span>';
+  return '<span class="title-pill" style="border-color:'+mc[1]+'55;color:'+mc[1]+'">'+mc[0]+' '+esc(verdict)+' · '+esc(conf)+' confidence</span>';
 }
 function rangeText(lo,hi){
   lo=lo||0; hi=hi||0;
@@ -439,8 +452,9 @@ function researchD(handle,data){
     totalAll:sumMid,avg:ppl.length?sumMid/ppl.length:0,whalesAll:0,
     cast:ppl,lbCount:20,
     stats:[{k:"Followers (real)",v:compact(M.totalFollowers||0)},{k:"Researched",v:String(M.researched||ppl.length)},
-      {k:"Identified",v:String(M.identified||0)},{k:"Top estimate",v:money(top)}],
-    totsub:"Σ midpoints of researched ranges · evidence-based, mostly low-confidence"};
+      {k:"Identified",v:String(M.identified||0)},{k:"Richest follower (mid)",v:money(top)}],
+    totsub:"Σ midpoints of researched ranges · evidence-based, mostly low-confidence",
+    hint:"🔬 Researched dossier — AI agents identified these followers from public sources and estimated ranges, with a verification pass on every entry. Wide error bars; opinions, not facts."};
 }
 async function runResearch(handle){
   const btn=$("go"),old=btn.textContent;
@@ -479,6 +493,18 @@ async function runReal(handle){
   }finally{ btn.textContent=old;btn.disabled=false; }
 }
 
+// default routing: researched dossier when one exists, toy model otherwise
+async function runAuto(handle){
+  const btn=$("go"),old=btn.textContent;
+  btn.textContent="Loading…";btn.disabled=true;
+  try{
+    const r=await fetch("/research/"+encodeURIComponent(handle.toLowerCase())+".json");
+    if(r.ok){paint(researchD(handle,await r.json()));return;}
+  }catch(e){}
+  finally{btn.textContent=old;btn.disabled=false;}
+  paint(syntheticD(handle));
+}
+
 function run(raw){
   const handle=parseHandle(raw);
   if(!handle){$("q").focus();return;}
@@ -486,7 +512,7 @@ function run(raw){
   clearError();
   if($("researchmode")&&$("researchmode").checked) runResearch(handle);
   else if($("realmode")&&$("realmode").checked) runReal(handle);
-  else paint(syntheticD(handle));
+  else runAuto(handle);
 }
 
 /* sample chips */
@@ -497,6 +523,7 @@ $("chips").addEventListener("click",e=>{const c=e.target.closest(".chip");if(c)r
 $("go").addEventListener("click",()=>run($("q").value));
 $("q").addEventListener("keydown",e=>{if(e.key==="Enter")run($("q").value);});
 $("lucky").addEventListener("click",()=>run(SAMPLES[Math.floor(Math.random()*SAMPLES.length)]));
+$("global").addEventListener("click",e=>{const tr=e.target.closest("tr[data-h]");if(tr)run(tr.dataset.h);});
 
 renderGlobal("");
 loadDossiers();
