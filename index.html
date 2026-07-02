@@ -117,7 +117,7 @@
     <button class="btn ghost" id="lucky">🎲 Surprise me</button>
   </div>
   <p class="hint">For entertainment only — net worth is estimated by a (totally made-up) model from the handle. Same handle always gives the same result, so it's shareable.</p>
-  <label class="toggle"><input type="checkbox" id="realmode"/> 🛰️ Use real followers (live API — needs your twitterapi.io key in <code>.env</code>)</label>
+  <label class="toggle"><input type="checkbox" id="realmode"/> 🛰️ Use real followers (live from X — free, but rate-limited to keep the lights on)</label>
   <label class="toggle"><input type="checkbox" id="researchmode"/> 🔬 Deep-researched dossiers — evidence-based, sourced estimates (demo: <b>@levelsio</b>)</label>
   <div id="err" class="err"></div>
   <div class="chips" id="chips"></div>
@@ -160,10 +160,9 @@
 
       <div class="panel gl">
         <h3><span class="pulse"></span>Global leaderboard</h3>
-        <p class="muted">Every profile searched on this device, by total network fortune.</p>
+        <p class="muted">Deep-researched boards, ranked by combined follower fortune.</p>
         <table><thead><tr><th class="rank">#</th><th>Profile</th><th class="r">Network fortune</th></tr></thead>
           <tbody id="global"></tbody></table>
-        <button class="btn ghost" id="clearlb" style="margin-top:12px;font-size:12.5px;padding:8px 14px">Clear leaderboard</button>
       </div>
     </div>
   </div>
@@ -498,7 +497,6 @@ $("chips").addEventListener("click",e=>{const c=e.target.closest(".chip");if(c)r
 $("go").addEventListener("click",()=>run($("q").value));
 $("q").addEventListener("keydown",e=>{if(e.key==="Enter")run($("q").value);});
 $("lucky").addEventListener("click",()=>run(SAMPLES[Math.floor(Math.random()*SAMPLES.length)]));
-$("clearlb").addEventListener("click",()=>{localStorage.removeItem(LB_KEY);renderGlobal($("q").value);});
 
 renderGlobal("");
 loadDossiers();
