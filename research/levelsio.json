@@ -11,12 +11,25 @@
    "headline": "Dutch indie hacker and bootstrapped founder of Nomad List, Remote OK, Photo AI, and Interior AI",
    "verdict": "plausible",
    "confidence": "low",
-   "low": 30000000.0,
-   "high": 80000000.0,
+   "low": 30000000,
+   "high": 80000000,
    "sources": [
     "https://unnetworth.com/pieter-levels-net-worth/",
     "https://www.cinenetworth.com/pieter-levels-net-worth/"
    ]
+  },
+  "sampleDist": {
+   "sampled": 2000,
+   "b0": 1876,
+   "b1": 101,
+   "b2": 20,
+   "b3": 3
+  },
+  "estimate": {
+   "total": 22723793550.156124,
+   "low": 11361896775.078062,
+   "high": 45447587100.31225,
+   "floor": 28383250.0
   }
  },
  "people": [

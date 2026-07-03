@@ -338,9 +338,9 @@ function loadDossiers(){
 function renderGlobal(currentHandle){
   let arr;
   if(DOSSIERS&&DOSSIERS.length){
-    arr=DOSSIERS.slice().sort((a,b)=>b.total-a.total).slice(0,12)
-      .map(d=>({handle:d.handle,total:d.total,followers:d.followers,
-        sub:(d.identified||0)+' identified · '+(d.researched||0)+' researched'
+    arr=DOSSIERS.slice().sort((a,b)=>(b.est||b.total)-(a.est||a.total)).slice(0,12)
+      .map(d=>({handle:d.handle,total:d.est||d.total,followers:d.followers,
+        sub:(d.identified||0)+' identified · researched floor '+money(d.total)
           +((d.owner&&(d.owner.low||d.owner.high))?(' · own '+money(d.owner.low)+'–'+money(d.owner.high)):'')}));
   }else{
     const lb=loadLB();
@@ -455,17 +455,23 @@ function researchD(handle,data){
   const o=M.owner;
   const ownLine=o?('💰 Own estimated worth: '+rangeText(o.low,o.high)+' · '+esc(o.verdict)
     +((o.sources&&o.sources[0])?(' <a class="srclink" href="'+esc(o.sources[0])+'" target="_blank" rel="noopener">🔗</a>'):'')):'';
+  const est=M.estimate;
+  const modeled=est&&est.total>sumMid*1.2; // only headline the model when it adds real signal
   return {handle:M.account||handle,
     displayName:M.name||("@"+handle),
     ownLine,
+    totalAll:modeled?est.total:sumMid,
+    totalText:modeled?("~"+money(est.total)):undefined,
+    totsub:modeled
+      ?("modeled: "+money(sumMid)+" researched floor + "+compact(M.totalFollowers||0)+" followers × measured wealth rates · ±2x")
+      :"Σ midpoints of researched ranges · evidence-based, mostly low-confidence",
     handleLine:"🔬 deep-researched dossier · "+(M.identified||0)+" of "+(M.researched||ppl.length)+" identifiable",
     verified:true,followers:M.totalFollowers||0,
-    totalAll:sumMid,avg:ppl.length?sumMid/ppl.length:0,whalesAll:0,
+    avg:ppl.length?sumMid/ppl.length:0,whalesAll:0,
     cast:ppl,lbCount:20,
     stats:[{k:"Followers (real)",v:compact(M.totalFollowers||0)},{k:"Researched",v:String(M.researched||ppl.length)},
       {k:"Identified",v:String(M.identified||0)},{k:"Richest follower (mid)",v:money(top)}],
-    totsub:"Σ midpoints of researched ranges · evidence-based, mostly low-confidence",
-    hint:"🔬 Researched dossier — AI agents identified these followers from public sources and estimated ranges, with a verification pass on every entry. Wide error bars; opinions, not facts."};
+    hint:"🔬 Researched dossier — AI agents identified these followers from public sources and estimated ranges, with a verification pass on every entry. Modeled totals extrapolate from measured wealth rates; ±2x error bars. Opinions, not facts."};
 }
 async function runResearch(handle){
   const btn=$("go"),old=btn.textContent;

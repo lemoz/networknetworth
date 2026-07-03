@@ -17,6 +17,19 @@
     "https://www.forbes.com/profile/jack-dorsey/ (real-time: $7.7B as of 7/3/26)",
     "https://www.bloomberg.com/billionaires/profiles/jack-p-dorsey/"
    ]
+  },
+  "sampleDist": {
+   "sampled": 2000,
+   "b0": 2000,
+   "b1": 0,
+   "b2": 0,
+   "b3": 0
+  },
+  "estimate": {
+   "total": 38462059904.71963,
+   "low": 19231029952.359814,
+   "high": 76924119809.43925,
+   "floor": 285701000.0
   }
  },
  "people": [

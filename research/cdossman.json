@@ -16,6 +16,19 @@
    "sources": [
     "https://videonest.co"
    ]
+  },
+  "sampleDist": {
+   "sampled": 1495,
+   "b0": 1074,
+   "b1": 320,
+   "b2": 82,
+   "b3": 19
+  },
+  "estimate": {
+   "total": 648265778.3471835,
+   "low": 546689250.0,
+   "high": 1296531556.694367,
+   "floor": 546689250.0
   }
  },
  "people": [

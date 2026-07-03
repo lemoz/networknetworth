@@ -19,6 +19,19 @@
     "https://en.wikipedia.org/wiki/Naval_Ravikant",
     "https://trendsprouts.com/naval-ravikant-net-worth-2025-2026/"
    ]
+  },
+  "sampleDist": {
+   "sampled": 2000,
+   "b0": 1992,
+   "b1": 8,
+   "b2": 0,
+   "b3": 0
+  },
+  "estimate": {
+   "total": 17095027905.129519,
+   "low": 8547513952.564759,
+   "high": 34190055810.259037,
+   "floor": 344316750.0
   }
  },
  "people": [

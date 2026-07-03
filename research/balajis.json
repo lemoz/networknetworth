@@ -17,6 +17,19 @@
     "https://www.datawallet.com/crypto/balaji-srinivasan-net-worth",
     "https://watcher.guru/news/balaji-srinivasan-net-worth"
    ]
+  },
+  "sampleDist": {
+   "sampled": 2000,
+   "b0": 1993,
+   "b1": 5,
+   "b2": 2,
+   "b3": 0
+  },
+  "estimate": {
+   "total": 10378968039.334915,
+   "low": 5189484019.667458,
+   "high": 20757936078.66983,
+   "floor": 324329000.0
   }
  },
  "people": [

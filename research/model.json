@@ -1,0 +1,16 @@
+{
+ "note": "total = researched floor + unresearched remainder x bucket share x identRate x bucketMean. Rates for RANDOM followers: b1 measured (4/30 batch-1); b0 assumed pending measurement; b2/b3 = curated-pool rate discounted.",
+ "bucketMeans": {
+  "b0": 416724.2990654206,
+  "b1": 1219874.080882353,
+  "b2": 3030492.6470588236,
+  "b3": 1139468.75
+ },
+ "identRates": {
+  "b0": 0.01,
+  "b1": 0.13,
+  "b2": 0.4,
+  "b3": 0.6
+ },
+ "errorFactor": 2.0
+}

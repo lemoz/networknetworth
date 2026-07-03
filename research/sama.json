@@ -17,6 +17,19 @@
     "https://www.forbes.com/profile/sam-altman/",
     "https://www.forbes.com/sites/aliciapark/2026/05/12/sam-altman-testifies-he-owns-one-third-of-helion-energy-worth-165-billion/"
    ]
+  },
+  "sampleDist": {
+   "sampled": 2000,
+   "b0": 1992,
+   "b1": 8,
+   "b2": 0,
+   "b3": 0
+  },
+  "estimate": {
+   "total": 25665175591.15614,
+   "low": 12832587795.57807,
+   "high": 51330351182.31228,
+   "floor": 449827250.0
   }
  },
  "people": [

@@ -11,14 +11,27 @@
    "headline": "CEO of Tesla and SpaceX/xAI; world's richest person, briefly the first-ever trillionaire after SpaceX's June 2026 IPO before a pullback",
    "verdict": "supported",
    "confidence": "medium",
-   "low": 950000000000.0,
-   "high": 1450000000000.0,
+   "low": 950000000000,
+   "high": 1450000000000,
    "sources": [
     "https://www.forbes.com/profile/elon-musk/",
     "https://www.forbes.com/real-time-billionaires/",
     "https://www.forbes.com/sites/pr/2026/06/12/forbes-declares-elon-musk-as-the-worlds-first-trillionaire/",
     "https://www.forbes.com/sites/tylerroush/2026/07/01/elon-musk-loses-trillionaire-status-as-spacex-slide-cuts-net-worth-by-50-billion/"
    ]
+  },
+  "sampleDist": {
+   "sampled": 2000,
+   "b0": 1980,
+   "b1": 18,
+   "b2": 2,
+   "b3": 0
+  },
+  "estimate": {
+   "total": 1626664406493.8862,
+   "low": 813332203246.9431,
+   "high": 3253328812987.7725,
+   "floor": 24396000.0
   }
  },
  "people": [
