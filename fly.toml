@@ -1,5 +1,5 @@
-# Fly.io config — FollowerFortune
-app = "follower-fortune"
+# Fly.io config — NetWorkNetWorth (NWNW)
+app = "networknetworth"
 primary_region = "sjc"
 
 [build]

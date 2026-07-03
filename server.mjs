@@ -1,4 +1,4 @@
-// FollowerFortune live server — zero dependencies (Node 18+ for global fetch).
+// NetWorkNetWorth (NWNW) live server — zero dependencies (Node 18+ for global fetch).
 // Serves the static app AND proxies follower lookups to twitterapi.io so the
 // API key stays server-side and never ships to the browser.
 //
@@ -128,7 +128,7 @@ const server = createServer(async (req, res) => {
   const u = new URL(req.url, 'http://localhost');
 
   if (u.pathname === '/api/lookup') {
-    if (!KEY) return send(res, 200, JSON.stringify({ ok: false, error: 'no_api_key', message: 'No TWITTERAPI_KEY found. Add it to follower-fortune/.env and restart.' }));
+    if (!KEY) return send(res, 200, JSON.stringify({ ok: false, error: 'no_api_key', message: 'No TWITTERAPI_KEY found. Add it to .env and restart.' }));
     const handle = (u.searchParams.get('handle') || '').replace(/[^A-Za-z0-9_]/g, '').slice(0, 15).toLowerCase();
     if (!handle) return send(res, 200, JSON.stringify({ ok: false, error: 'bad_handle', message: 'Missing or invalid handle.' }));
 
@@ -165,4 +165,4 @@ const server = createServer(async (req, res) => {
   });
 });
 
-server.listen(PORT, () => console.log(`FollowerFortune live on http://localhost:${PORT}  (API key ${KEY ? 'loaded' : 'MISSING — synthetic only'})`));
+server.listen(PORT, () => console.log(`NetWorkNetWorth live on http://localhost:${PORT}  (API key ${KEY ? 'loaded' : 'MISSING — synthetic only'})`));

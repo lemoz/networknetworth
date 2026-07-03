@@ -1,4 +1,4 @@
-# FollowerFortune
+# NetWorkNetWorth (NWNW)
 
 Estimate the combined net worth of a Twitter/X account's **followers** — the people following them, not who they follow.
 

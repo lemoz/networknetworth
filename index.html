@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>FollowerFortune — how rich is your network?</title>
+<title>NetWorkNetWorth (NWNW) — how rich is your network?</title>
 <style>
   :root{
     --bg:#070912; --bg2:#0c1020; --card:rgba(255,255,255,.04); --card2:rgba(255,255,255,.06);
@@ -109,7 +109,7 @@
   <header class="top">
     <div class="logo">🐋</div>
     <div>
-      <h1>FollowerFortune</h1>
+      <h1>NetWorkNetWorth <span style="font-size:14px;color:var(--mut);font-weight:600;letter-spacing:1px">NWNW</span></h1>
     </div>
   </header>
   <p class="tag">Drop in any X / Twitter profile and see the hidden net worth lurking in their followers.</p>
@@ -172,7 +172,7 @@
   </div>
 
   <p class="footer">
-    <b>FollowerFortune</b> estimates are <b>speculative guesses for entertainment and research</b> — nobody's actual net worth is known here.<br/>
+    <b>NetWorkNetWorth</b> (NWNW) estimates are <b>speculative guesses for entertainment and research</b> — nobody's actual net worth is known here.<br/>
     Toy mode invents numbers deterministically from the handle. Live mode uses public follower counts only.
     Researched dossiers are AI-compiled from public sources and carry wide error bars; verdicts and ranges are opinions, not facts.<br/>
     Not financial data. Not financial advice. If you're listed and want out, ping <a href="https://x.com/cdossman" style="color:#aab2c8">@cdossman</a> and you'll be removed. Don't @ your accountant.
@@ -488,7 +488,7 @@ async function runReal(handle){
     const r=await fetch("/api/lookup?handle="+encodeURIComponent(handle)+"&max=100");
     const j=await r.json();
     if(!j.ok){
-      const m={no_api_key:"No API key on the server yet — add TWITTERAPI_KEY to follower-fortune/.env and restart the server. Showing the estimated model instead.",
+      const m={no_api_key:"No API key on the server yet — add TWITTERAPI_KEY to .env and restart the server. Showing the estimated model instead.",
         bad_key:"twitterapi.io rejected the API key — double-check it in .env.",
         not_found:"twitterapi.io couldn't load @"+handle+" (typo, or a protected/suspended account?).",
         rate_limited:"Rate limited — wait a few seconds and try again.",
