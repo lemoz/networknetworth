@@ -3,8 +3,8 @@
   "account": "levelsio",
   "name": "@levelsio",
   "totalFollowers": 905538,
-  "researched": 523,
-  "identified": 80,
+  "researched": 662,
+  "identified": 148,
   "note": "Evidence-based ranges from live web research, verified by an adversarial checker. Most are low-confidence; net worth is rarely public.",
   "owner": {
    "name": "Pieter Levels",
@@ -26,10 +26,10 @@
    "b3": 3
   },
   "estimate": {
-   "total": 16043841860.843943,
-   "low": 8021920930.421971,
-   "high": 32087683721.687885,
-   "floor": 768688250.0
+   "total": 15391420836.942055,
+   "low": 7695710418.471027,
+   "high": 30782841673.88411,
+   "floor": 806760750.0
   }
  },
  "people": [
@@ -7950,6 +7950,2126 @@
    "sources": [
     "https://x.com/0xSalary",
     "https://twitter.com/0xSalary"
+   ]
+  },
+  {
+   "handle": "itsmiroko",
+   "name": "Mirko Basil Dolger",
+   "followers": 7030,
+   "identified": false,
+   "headline": "Unverified: cited source (aiso.tools/about) does not actually name Mirko Basil Dolger, contains no founder/CEO attribution, funding, or handle reference. His independently-confirmed X accounts are @Te",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://aiso.tools/about (does not mention Mirko Basil Dolger, funding, or handle -- fails to substantiate claim)",
+    "https://x.com/mirko_basil (his actual likely X account, not itsmiroko)",
+    "https://twitter.com/tellertrakis (his other known X account, not itsmiroko)",
+    "https://www.linkedin.com/in/mirkodoelger/"
+   ]
+  },
+  {
+   "handle": "ben_issen",
+   "name": "Ben Issen",
+   "followers": 10208,
+   "identified": true,
+   "headline": "Founding designer at Rox; entrepreneurial designer behind Side School and acquired Supercreative/Notion Pack projects.",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 50000,
+   "high": 750000,
+   "sources": [
+    "https://benissen.com/",
+    "https://www.rox.com/company",
+    "https://x.com/ben_issen",
+    "https://www.linkedin.com/posts/benissen_i-moved-from-paris-to-san-francisco-3-months-activity-7450678170761969665-dNQ1"
+   ]
+  },
+  {
+   "handle": "IKnowSoftware",
+   "name": "Will Kelly",
+   "followers": 1918,
+   "identified": true,
+   "headline": "Owner/operator of DevGrabr, a small solo/boutique software-engineering recruiting firm based in Dallas, TX; identity corroborated by independent web results, but no public financial evidence exists fo",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 50000,
+   "high": 300000,
+   "sources": [
+    "https://x.com/IKnowSoftware"
+   ]
+  },
+  {
+   "handle": "aaron",
+   "name": "Aaron LaBerge",
+   "followers": 7250,
+   "identified": false,
+   "headline": "CTO and head of interactive at PENN Entertainment; former Disney Entertainment and ESPN president/CTO.",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://www.wsj.com/business/media/disney-technology-chief-to-depart-1fe2443c"
+   ]
+  },
+  {
+   "handle": "Madisonkanna",
+   "name": "Madison Kanna",
+   "followers": 81453,
+   "identified": true,
+   "headline": "Engineer at Baseten (AI inference); personal site, GitHub, and Substack confirm identity; X account content (Baseten, \"Infer This\" show, SF-based) matches. No public financial data exists for her \u2014 ne",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 50000,
+   "high": 400000,
+   "sources": [
+    "https://madisonkanna.com/",
+    "https://github.com/madisonkanna",
+    "https://x.com/Madisonkanna"
+   ]
+  },
+  {
+   "handle": "aehyok",
+   "name": "AI\u5c11\u5e74 / aehyok",
+   "followers": 8048,
+   "identified": true,
+   "headline": "Pseudonymous Shenzhen-based full-stack independent developer; GitHub (171 followers, 133 repos) and pinned video2blog project (344 stars) confirm identity, but no revenue, funding, or business data ex",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://github.com/aehyok",
+    "https://github.com/aehyok/video2blog",
+    "https://x.com/aehyok"
+   ]
+  },
+  {
+   "handle": "wcgbk",
+   "name": "Ben Klein",
+   "followers": 2034,
+   "identified": true,
+   "headline": "Ben Klein is the founder/president of World Class Growth, a small boutique growth-marketing consultancy/agency serving startup founders and small businesses in the Bay Area",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 150000,
+   "sources": [
+    "https://www.worldclassgrowth.com/",
+    "https://www.linkedin.com/in/wcgbk/"
+   ]
+  },
+  {
+   "handle": "trenz999",
+   "name": "Joseph Trent Jiggy",
+   "followers": 6145,
+   "identified": false,
+   "headline": "GitHub profile for trenz999 actually belongs to Joseph Essien (TrenzTech, Web3/dApp developer) and links to a different X handle (@tech_trenz9, not @trenz999) -- claimed identity and cross-platform li",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://github.com/trenz999"
+   ]
+  },
+  {
+   "handle": "arturogarrido",
+   "name": "Arturo Garrido",
+   "followers": 12000,
+   "identified": false,
+   "headline": "X handle @arturogarrido is a real, long-active account (since 2007, ~36K posts), but no verified bio/location evidence ties it specifically to a Palo Alto/Silicon Valley engineering manager \u2014 \"Arturo ",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/arturogarrido",
+    "https://github.com/arturogarrido"
+   ]
+  },
+  {
+   "handle": "BanjiAlo",
+   "name": "Banji Alo",
+   "followers": 14653,
+   "identified": true,
+   "headline": "Banji Alo is a data career coach, career advisor, and author (banjialo.com), selling a data-analyst career course, coaching/consultations, and books via Gumroad/Thinkific.",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 10000,
+   "high": 150000,
+   "sources": [
+    "https://banjialo.com/",
+    "https://au.linkedin.com/in/banjialo",
+    "https://linktr.ee/banjialo"
+   ]
+  },
+  {
+   "handle": "ivictorialiao",
+   "name": "Victoria Liao",
+   "followers": 1139,
+   "identified": true,
+   "headline": "Victoria Liao is Head of Community at PlanetScale (confirmed via her own X post referencing \"@PlanetScale happy hour\" and LinkedIn); no public equity, compensation, or net-worth data exists for her",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/ivictorialiao/status/2059785658986799268",
+    "https://www.linkedin.com/in/liaovictoria"
+   ]
+  },
+  {
+   "handle": "PaoloZanetto",
+   "name": "Paolo Zanetto",
+   "followers": 2367,
+   "identified": true,
+   "headline": "Italian corporate/public-affairs executive; CEO of Excellera Advisory Group and a Cattaneo Zanetto & Co. principal/partner",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 1000000,
+   "high": 15000000,
+   "sources": [
+    "https://www.engage.it/agenzie/community-cattaneo-zanetto-e-coe-il-fondo-xenon-uniscono-le-forze-nasce-la-holdingexcellera-advisory-group.aspx",
+    "https://www.engage.it/agenzie/icg-e-il-nuovo-socio-di-maggioranza-di-excellera-advisory-group-focus-sulla-crescita-internazionale.aspx"
+   ]
+  },
+  {
+   "handle": "Harry_Alnaimi",
+   "name": "Harry Alnaimi",
+   "followers": 1104,
+   "identified": true,
+   "headline": "Head of Growth at Lopay (small UK/US payments startup); self-described founder of Interface Craft, a small agency",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 50000,
+   "sources": [
+    "https://x.com/Harry_Alnaimi",
+    "https://lopay.com/en-gb/about",
+    "https://uk.linkedin.com/in/harry-alnaimi-064620198",
+    "https://rocketreach.co/harry-alnaimi-email_231192999"
+   ]
+  },
+  {
+   "handle": "fyrejason",
+   "name": "Jason Turnquist",
+   "followers": 1000,
+   "identified": true,
+   "headline": "Jason Turnquist is co-founder/CEO of Fyresite, a Phoenix-based Shopify/eCommerce web and app development agency, and co-founder of ProPlaintiff.ai, a small legaltech SaaS startup (won a regional Arizo",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 100000,
+   "high": 1000000,
+   "sources": [
+    "https://www.linkedin.com/in/jason-turnquist/",
+    "https://www.fyresite.com/case-studies/proplaintiff-ai/",
+    "https://attorneyatlawmagazine.com/stories/vendor-interview/proplaintiff-ai"
+   ]
+  },
+  {
+   "handle": "samhayek_",
+   "name": "Sam Hayek",
+   "followers": 3131,
+   "identified": true,
+   "headline": "San Diego-based artist/designer behind samhayek.com; public profile describes A/V art, design engineering, writing, music (identity plausible but unverified beyond profile self-description)",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/samhayek_"
+   ]
+  },
+  {
+   "handle": "gasparian",
+   "name": "Ronaldo Gasparian",
+   "followers": 6259,
+   "identified": true,
+   "headline": "Brazilian DJ and music producer; 20+ years, 1,200+ performances, founder of FunFun Studios label; official site/press kit confirm bio but no financial disclosures exist",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 100000,
+   "high": 800000,
+   "sources": [
+    "https://ronaldogasparian.com/",
+    "https://ronaldogasparian.com/press/",
+    "https://x.com/gasparian"
+   ]
+  },
+  {
+   "handle": "arlogilbert",
+   "name": "Arlo Gilbert",
+   "followers": 7470,
+   "identified": false,
+   "headline": "Austin startup founder; co-founder/CEO of Osano (privacy compliance SaaS, ~$44.4M raised across 4 VC rounds), previously co-founder/CEO of Meta SaaS (exited 2018, terms undisclosed)",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://www.crunchbase.com/person/arlo-gilbert",
+    "https://www.osano.com/company/about",
+    "https://theorg.com/org/osano/org-chart/arlo-gilbert"
+   ]
+  },
+  {
+   "handle": "KasoziAK",
+   "name": "Kasozi Abdu-Karim",
+   "followers": 1616,
+   "identified": false,
+   "headline": "Unverified: self-identified claim linking @KasoziAK to an early/prelaunch site (Patriy); identity and site content could not be independently confirmed.",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/KasoziAK (inaccessible for verification \u2014 login-gated)",
+    "https://patriy.com/ (inaccessible for verification \u2014 blocked fetch, 403)"
+   ]
+  },
+  {
+   "handle": "tinatavcar",
+   "name": "Tina Tav\u010dar",
+   "followers": 1362,
+   "identified": true,
+   "headline": "Ljubljana-based freelance/contract mobile UI designer (Dribbble shows work for Azumio health apps); X handle identity unverifiable (fetch blocked), no evidence of funding, equity, or exits",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 20000,
+   "sources": [
+    "https://dribbble.com/tinatavcar"
+   ]
+  },
+  {
+   "handle": "Chuck_Huber",
+   "name": "Chuck Huber",
+   "followers": 26751,
+   "identified": true,
+   "headline": "American anime voice actor, filmmaker, acting coach, and convention guest known for Android 17 in Dragon Ball Z, Hiei in",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://www.chuckhuber.org/",
+    "https://x.com/chuck_huber?lang=en"
+   ]
+  },
+  {
+   "handle": "rikarends",
+   "name": "Rik Arends",
+   "followers": 4789,
+   "identified": true,
+   "headline": "Creator and maintainer of Makepad, an open-source Rust UI/application development platform.",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://makepad.nl/history.html (confirms identity/history only \u2014 contains NO financial data, no net worth, funding, or revenue figures)",
+    "https://makepad.nl/ (project homepage, no financial content)"
+   ]
+  },
+  {
+   "handle": "Nobullshit",
+   "name": "Michael Saad",
+   "followers": 5055,
+   "identified": false,
+   "headline": "Unverified: no public evidence ties the @Nobullshit X handle to Michael Saad or Digital1010; searches surface multiple distinct Michael Saad accounts (@MichaelLSaad, @MikeSaadTweets, @mikejsaad), none",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/nobullshit (bio/content not verifiable - X blocks unauthenticated fetch)",
+    "https://digital1010.com/ (confirms Digital1010 exists and lists a Michael Saad as CEO, but does not establish any link to the @Nobullshit handle)"
+   ]
+  },
+  {
+   "handle": "ben_guggenheim",
+   "name": "Benjamin Guggenheim",
+   "followers": 3573,
+   "identified": true,
+   "headline": "AI & Tech Brief writer/author at WP Intelligence, with prior reporting roles at POLITICO, Tax Notes, and The New York Times",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 150000,
+   "sources": [
+    "https://wpintelligence.washingtonpost.com/staff/benjamin-guggenheim/",
+    "https://wpintelligence.washingtonpost.com/about-us/"
+   ]
+  },
+  {
+   "handle": "AndrewAsksHow",
+   "name": "Andrew Forte",
+   "followers": 38247,
+   "identified": true,
+   "headline": "Andrew Forte, Business Development Lead at Claynosaurz and host of the \"Andrew Asks How\" podcast; no direct public wealth evidence (no disclosed equity, token holdings, or income data).",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 200000,
+   "sources": [
+    "https://x.com/AndrewAsksHow",
+    "https://www.claynosaurz.com/team"
+   ]
+  },
+  {
+   "handle": "jordanhknight_",
+   "name": "Jordan Knight",
+   "followers": 0,
+   "identified": false,
+   "headline": "Likely misidentified: X handle @jordanhknight_ does not match the real Jordan Knight's known account",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://twitter.com/jhk_______",
+    "https://nationalconservatism.org.au/project/jordan-knight-on-spectator-tv-discussing-immigration-policy/"
+   ]
+  },
+  {
+   "handle": "rudrank",
+   "name": "Rudrank Riyam",
+   "followers": 19780,
+   "identified": true,
+   "headline": "Apple-platform developer, technical writer, and creator of ASC CLI; now SWE at Rork after Rork acquired/sponsored ASC CLI (kept MIT/open source).",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 0,
+   "high": 150000,
+   "sources": [
+    "https://x.com/rudrank/status/2045225537195642925",
+    "https://rudrank.com/about"
+   ]
+  },
+  {
+   "handle": "timothymarc",
+   "name": "Timothy Marc",
+   "followers": 4253,
+   "identified": true,
+   "headline": "Online-business founder and marketer behind timothymarc.com, TMARC Agency, Secret Society Mastermind, BulletBooks, Scout",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 300000,
+   "high": 3000000,
+   "sources": [
+    "https://x.com/timothymarc",
+    "https://timothymarc.com/"
+   ]
+  },
+  {
+   "handle": "vvirga",
+   "name": "Vince Virga",
+   "followers": 3021,
+   "identified": false,
+   "headline": "Unverified match to Vince Virga, SkillStorm Chairman & Co-Founder; X handle @vvirga never cross-confirmed against this person, and no source supports any net-worth figure",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://skillstorm.com/about/",
+    "https://skillstorm.com/"
+   ]
+  },
+  {
+   "handle": "senortilt",
+   "name": "Sam Kiki",
+   "followers": 11726,
+   "identified": true,
+   "headline": "Founder and CEO of MonkeyTilt (crypto casino/sports betting); known in poker circles as \"Se\u00f1or Tilt,\" two-time High Stakes Poker record holder on PokerGO. Identity corroborated by Crunchbase, Entrepre",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://monkeytilt.com/about/",
+    "https://www.crunchbase.com/person/sam-kiki",
+    "https://www.entrepreneur.com/building-a-business/entrepreneurship/sam-kiki-reads-his-2009-harvard-waitlist-letter"
+   ]
+  },
+  {
+   "handle": "kaptan_web3",
+   "name": "Emin Karag\u00f6z",
+   "followers": 8956,
+   "identified": true,
+   "headline": "GitHub user karagozemin (Izmir, Turkey) explicitly links to X/YouTube/Telegram as @kaptan_web3, confirming identity; bio reads \"Web3 Developer + Content Creator\" working on small open-source cross-cha",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://github.com/karagozemin"
+   ]
+  },
+  {
+   "handle": "hartcb",
+   "name": "Chris Hart",
+   "followers": 1492,
+   "identified": true,
+   "headline": "CEO of Civic / Civic Technologies (crypto identity-verification startup, CVC token); 25+ years in Silicon Valley tech, finance, operations per company bio",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/hartcb (identity/employment confirmation only - no financial data)",
+    "https://x.com/CivicKey (company account - no financial data)",
+    "https://cryptorank.io/ico/civic (Civic's CVC token FDV is only ~$26M; company raised $33M ICO in 2017 plus $2.75M seed - too small to support a $1M-8M personal net worth claim with no equity/comp data)"
+   ]
+  },
+  {
+   "handle": "jchatelaine",
+   "name": "Jeremy Chatelaine",
+   "followers": 1305,
+   "identified": true,
+   "headline": "Founder/CEO of QuickMail and MonsterOps; long-time software engineer, cold-email author, and podcast co-host.",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 800000,
+   "high": 5000000,
+   "sources": [
+    "https://quickmail.com/authors/jeremy-chatelaine",
+    "https://monsterops.io/en/about",
+    "https://getlatka.com/companies/quickmail.com",
+    "https://www.crunchbase.com/person/jeremy-chatelaine"
+   ]
+  },
+  {
+   "handle": "jar2",
+   "name": "\u5742\u672c\u76f4\u6a39 / Naoki Sakamoto",
+   "followers": 1360,
+   "identified": false,
+   "headline": "Self-described representative of Coper LLC, generative-AI product/development consultant, and former CTO/founder at thre",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/jar2 (unverified self-profile only; no independent corroboration found)"
+   ]
+  },
+  {
+   "handle": "muzzammil_awan",
+   "name": "Muzammal/Muzammil Akram",
+   "followers": 1212,
+   "identified": false,
+   "headline": "Unverified: no public evidence ties X handle @muzzammil_awan to a specific real-world identity, to Rank4Sure, or to SEOMasterz. Search for the claimed name plus these companies returns no corroboratin",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/muzzammil_awan (unreachable/unauthenticated, content unverified)",
+    "https://rank4sure.com/ (site exists but no verified link to this individual)"
+   ]
+  },
+  {
+   "handle": "arbuge",
+   "name": "Alex Bugeja",
+   "followers": 1076,
+   "identified": true,
+   "headline": "Alex Bugeja, founder/CEO of Traffikoo LLC (online media/advertising/SaaS, founded 2005) and former founder/CTO of VC-backed wireless semiconductor company Engim (2001-2004).",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://github.com/arbuge",
+    "https://alexbugeja.com/",
+    "https://x.com/arbuge"
+   ]
+  },
+  {
+   "handle": "PKoellinger",
+   "name": "Philipp Koellinger",
+   "followers": 1983,
+   "identified": true,
+   "headline": "Prof. Dr. Philipp Koellinger, Co-Founder & CEO of DeSci Labs, professor at VU Amsterdam, published in genoeconomics",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 100000,
+   "high": 2000000,
+   "sources": [
+    "https://x.com/pkoellinger",
+    "https://research.vu.nl/en/persons/philipp-koellinger/",
+    "https://www.crunchbase.com/organization/desci-labs"
+   ]
+  },
+  {
+   "handle": "burakborhan",
+   "name": "Burak Borhan",
+   "followers": 1010,
+   "identified": true,
+   "headline": "Red Hat Regional Director covering Saudi Arabia/North Gulf/Levant (MEA ecosystems); LinkedIn corroborates the role, but no independent wealth signals (no equity, ownership, or exit history) were found",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 150000,
+   "high": 600000,
+   "sources": [
+    "https://x.com/burakborhan (unverified this pass - fetch blocked)",
+    "https://www.linkedin.com/posts/burakborhan_redhatsummit-teamwork-innovation-activity-7129531540933345280-H4l8",
+    "https://www.redhat.com/ (generic corporate homepage, not a specific bio confirmation)"
+   ]
+  },
+  {
+   "handle": "JulioMCruz",
+   "name": "Julio M Cruz",
+   "followers": 1842,
+   "identified": true,
+   "headline": "GitHub profile (github.com/JulioMCruz) self-links to twitter.com/JulioMCruz, confirming the X handle belongs to Julio M Cruz, a Sr. Software Engineer and onchain/Web3 hackathon builder (ETHGlobal circ",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://github.com/JulioMCruz"
+   ]
+  },
+  {
+   "handle": "herelle_jean",
+   "name": "Jean Herelle",
+   "followers": 2016,
+   "identified": true,
+   "headline": "Jean Herelle, Co-Founder &amp; COO of CrunchDAO (Web3/Solana collective-intelligence data-science platform); identity confirmed via Solana Incubator's own tweets tagging @herelle_jean as CrunchDAO's f",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 100000,
+   "high": 5000000,
+   "sources": [
+    "https://x.com/herelle_jean",
+    "https://x.com/incubator/status/1909622674629722486",
+    "https://theorg.com/org/crunch-dao/org-chart/jean-herelle",
+    "https://www.linkedin.com/in/jean-herelle/"
+   ]
+  },
+  {
+   "handle": "loxadim",
+   "name": "Babacar L\u00f4",
+   "followers": 1919,
+   "identified": true,
+   "headline": "GitHub profile for the same handle (github.com/loxadim) identifies Babacar L\u00f4, based in Senegal, org \"Lamport Lab\"; X/Twitter account twitter.com/loxadim independently confirms the same name. Identity",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://github.com/loxadim",
+    "https://twitter.com/loxadim"
+   ]
+  },
+  {
+   "handle": "gaurangtorvekar",
+   "name": "Gaurang Torvekar",
+   "followers": 1759,
+   "identified": true,
+   "headline": "Gaurang Torvekar is confirmed as Co-Founder & CTO of Bonzo Finance (DeFi lending protocol); identity corroborated by LinkedIn, personal site, and Bonzo's own team docs. No personal net worth, token al",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/gaurangtorvekar",
+    "https://docs.bonzo.finance/hub/contributors/team",
+    "https://uk.linkedin.com/in/gaurangtorvekar",
+    "https://gaurangtorvekar.com/"
+   ]
+  },
+  {
+   "handle": "warrioraashuu",
+   "name": "Ashutosh Kumar",
+   "followers": 1726,
+   "identified": true,
+   "headline": "Ashutosh Kumar (aashuu/codeaashu), founder of DevDisplay and maker of several small indie SaaS/dev tools; no disclosed funding, revenue, or exit",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 50000,
+   "sources": [
+    "https://github.com/codeaashu"
+   ]
+  },
+  {
+   "handle": "JohanMBergman",
+   "name": "Johan Bergman",
+   "followers": 1351,
+   "identified": true,
+   "headline": "Writer/researcher at The Bitcoin Layer (Substack); publishes Bitcoin/macro research and a \"State Grid\" dashboard. No independent public wealth signals (no disclosed exits, fund AUM, or asset ownership",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 20000,
+   "high": 500000,
+   "sources": [
+    "https://x.com/JohanMBergman",
+    "https://thebitcoinlayer.substack.com/p/supply-meet-demand"
+   ]
+  },
+  {
+   "handle": "raghuvempati",
+   "name": "Raghu Kishore Vempati",
+   "followers": 2791,
+   "identified": true,
+   "headline": "Identified as Raghu Kishore Vempati, a Hyderabad-based Capgemini Engineering professional; GitHub, Medium, and X profiles are consistent and cross-linked to the same identity. No public evidence of fo",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://github.com/raghuvempati",
+    "https://x.com/raghuvempati"
+   ]
+  },
+  {
+   "handle": "JackNikogosian",
+   "name": "Jack Nikogosian",
+   "followers": 1017,
+   "identified": true,
+   "headline": "CEO/co-founder (bio lists \"Chief G[rowth Officer]\") of Aryze, a small Copenhagen fintech/crypto payments startup founded 2017.",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 50000,
+   "high": 1000000,
+   "sources": [
+    "https://x.com/JackNikogosian",
+    "https://www.aryze.io/about",
+    "https://www.forbes.com/sites/montymunford/2018/12/12/fintechblockchain-qa-jack-nikogosian-ceo-aryze/",
+    "https://theorg.com/org/aryze/org-chart/jack-nikogosian"
+   ]
+  },
+  {
+   "handle": "adamugarba",
+   "name": "Adamu Garba II",
+   "followers": 198833,
+   "identified": false,
+   "headline": "Nigerian IT entrepreneur and politician; Executive Chairman of IPI Group Limited/IPI Solutions and former presidential aspirant (2019 APC candidate)",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://twitter.com/adamugarbaipi?lang=en (found handle differs from entry's @adamugarba)",
+    "https://www.crunchbase.com/person/adamu-garba-ii"
+   ]
+  },
+  {
+   "handle": "realAlexbosco",
+   "name": "Alessandro \"Alex\" Bosco",
+   "followers": 5030,
+   "identified": false,
+   "headline": "Former Marine/Army veteran, founder and former CEO of SB Tactical, credited with inventing the Pistol Stabilizing Brace.",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://www.sb-tactical.com/about-us/company/",
+    "https://www.thefirearmblog.com/blog/2017/11/10/bosco-ceo-sb-tactical/"
+   ]
+  },
+  {
+   "handle": "francis7_a",
+   "name": "Francis Antony",
+   "followers": 6410,
+   "identified": false,
+   "headline": "Founder/guiding leader of CorestratAI Solutions Private Limited, an AI and cloud-native consulting/product company based",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://t.co/fggcB5nW9T (unverifiable shortlink, X profile itself inaccessible for confirmation)",
+    "https://www.corestratai.com/ (confirms only a 'francis@corestratai.com' contact email; does not name 'Francis Antony' as founder; no revenue/funding/valuation data present)"
+   ]
+  },
+  {
+   "handle": "vagnerpilar",
+   "name": "Vagner Pilar",
+   "followers": 1129,
+   "identified": true,
+   "headline": "Austin, Texas-based systems/performance engineer and kernel/Windows internals debugging enthusiast; public GitHub profile (windbgtree, 114 stars) explicitly links to this X handle",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 150000,
+   "sources": [
+    "https://github.com/vagnerpilar",
+    "https://github.com/vagnerpilar/windbgtree"
+   ]
+  },
+  {
+   "handle": "joehamilton",
+   "name": "Joe Hamilton",
+   "followers": 2161,
+   "identified": false,
+   "headline": "Unverified: likely conflates a Tasmania-born/Melbourne-based digital-new-media gallery artist (joehamilton.info) with a product-linked X account surfaced on a levelsio board; could not confirm the X b",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://joehamilton.info/ (real artist site, confirms Tasmania/Melbourne bio, but no financial info)",
+    "https://x.com/joehamilton (could not fetch - HTTP 402; bio/product-link claim unverified)"
+   ]
+  },
+  {
+   "handle": "overveenerick",
+   "name": "Erick Overveen",
+   "followers": 32341,
+   "identified": false,
+   "headline": "Unverified: X handle identity could not be confirmed (X unfetchable), and the cited De Andere Krant tag-archive page contains no mention of Erick Overveen, his role, or any culture-editor byline \u2014 the",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": []
+  },
+  {
+   "handle": "jfigueres",
+   "name": "Jaime Figueres Ulate",
+   "followers": 2785,
+   "identified": true,
+   "headline": "Independent digital transformation, AI, and innovation consultant based in San Jos\u00e9, Costa Rica; NOT related to former Costa Rican president Jos\u00e9 Mar\u00eda Figueres Olsen despite surname overlap",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 150000,
+   "sources": [
+    "https://twitter.com/jfigueres?lang=en"
+   ]
+  },
+  {
+   "handle": "DanielNorero",
+   "name": "Daniel Norero",
+   "followers": 6092,
+   "identified": true,
+   "headline": "Agricultural engineer, co-founder/COO of Neocrop Technologies, a pre-seed-stage gene-editing agbiotech startup based in Valdivia, Chile (confirmed via LinkedIn, ChileBIO, DF.cl, and industry press cov",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 50000,
+   "sources": [
+    "https://www.linkedin.com/in/daniel-norero/",
+    "https://mundoagro.io/cl/neocrop-technologies-biotecnologia-de-precision-hecha-en-chile/",
+    "https://chilebio.cl/2024/02/21/startup-valdiviana-pone-a-chile-a-la-vanguardia-en-agricultura-sostenible-a-traves-del-desarrollo-de-trigo-editado-tolerante-a-sequia/",
+    "https://www.df.cl/df-lab/innovacion-y-startups/neocrop-technologies-levanta-ronda-pre-semilla-para-acelerar-su"
+   ]
+  },
+  {
+   "handle": "paulbarron",
+   "name": "Paul Barron",
+   "followers": 201796,
+   "identified": true,
+   "headline": "Founder/host and CEO of Paul Barron Network, a crypto/blockchain media and research company",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://www.paulbarronnetwork.com/about",
+    "https://www.paulbarronnetwork.com/disclosures"
+   ]
+  },
+  {
+   "handle": "BitcoinSVCOL",
+   "name": "Jorge Pelaez",
+   "followers": 1622,
+   "identified": true,
+   "headline": "X account \"Jorge Pelaez | BSV COL\" (@BitcoinSVCOL) matches the official BSV Association ambassador listing for Jorge Pelaez in Colombia, so identity is confirmed. But neither source discloses any inco",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/BitcoinSVCOL",
+    "https://bsvassociation.org/communities/ambassadors/"
+   ]
+  },
+  {
+   "handle": "timothypost",
+   "name": "Timothy Post",
+   "followers": 2382,
+   "identified": true,
+   "headline": "Timothy Post is a LandVest/Christie's luxury real estate agent based in Dorset/Manchester, serving Southern Vermont; moved to Dorset full-time in 2022, prior career background unverified.",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 200000,
+   "high": 1500000,
+   "sources": [
+    "https://landvest.com/realestate/agent/timothy-post/",
+    "https://x.com/timothypost?lang=en"
+   ]
+  },
+  {
+   "handle": "AC_AntonioCosta",
+   "name": "Ant\u00f3nio Costa",
+   "followers": 20370,
+   "identified": false,
+   "headline": "Unverified: X handle is a locked/protected account with no public bio; cannot confirm it belongs to the ECO/Swipe News editorial director named Ant\u00f3nio Costa rather than any other person sharing this ",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://eco.sapo.pt/ficha-tecnica/ (confirms an Ant\u00f3nio Costa is Diretor/board member/1% shareholder of Swipe News SA - real but not a net-worth source and does not link to the X handle)",
+    "https://x.com/AC_AntonioCosta (protected/locked account, no bio, no visible content confirming identity)"
+   ]
+  },
+  {
+   "handle": "GeoMahdi",
+   "name": "Mahdi Rahimi",
+   "followers": 1296,
+   "identified": true,
+   "headline": "Postdoctoral Researcher at the University of Groningen Faculty of Spatial Sciences; GIS, urban informatics, and accessib",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 0,
+   "high": 100000,
+   "sources": [
+    "https://www.rug.nl/staff/mahdi.rahimi/",
+    "https://research.rug.nl/en/persons/mahdi-rahimi/",
+    "https://x.com/GeoMahdi"
+   ]
+  },
+  {
+   "handle": "KeshavSaraogi",
+   "name": "Keshav Saraogi",
+   "followers": 1224,
+   "identified": false,
+   "headline": "Real person, genuinely co-founder of Panora (Aptos DeFi DEX aggregator) per a Panora Medium post quoting him directly \u2014 but the X handle @KeshavSaraogi is unverified; no source ties this specific hand",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://panoraexchange.medium.com/panora-the-super-app-and-execution-layer-of-aptos-closes-fundraising-round-9605f9b6b67f (confirms Keshav Saraogi is genuinely Co-Founder of Panora, but does not mention any X/Twitter handle)",
+    "https://panora.exchange/ (legitimate project site, no team X handles listed)",
+    "https://www.linkedin.com/in/keshavsaraogi/ (LinkedIn profile exists but not cross-checked against the X handle)",
+    "NOTE: search also surfaced https://x.com/keshavrao_ as a distinct handle associated with a 'Keshav' in crypto/AI-prediction context \u2014 this is NOT the same as @KeshavSaraogi, underscoring the handle-identity is unconfirmed"
+   ]
+  },
+  {
+   "handle": "j_kaluzny",
+   "name": "Jakub Kaluzny",
+   "followers": 1040,
+   "identified": true,
+   "headline": "Security/AppSec professional; GitHub profile (confirmed via direct fetch) identifies him as Jakub Kaluzny, a senior pentester and IT security researcher (bio: \"research: voice biometrics, FOREX, finte",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 0,
+   "high": 300000,
+   "sources": [
+    "https://github.com/jkaluzny (verified: bio matches claimed identity, and profile self-links to twitter.com/j_kaluzny)",
+    "https://x.com/j_kaluzny (could not be independently fetched directly - paywalled/402 - but identity is corroborated via GitHub's own outbound link, so not bogus)"
+   ]
+  },
+  {
+   "handle": "lazyapoorv",
+   "name": "Apoorv Shankar",
+   "followers": 1025,
+   "identified": true,
+   "headline": "Co-founder/CEO of LazyCo (Aina Ring), acquired by Ultrahuman in 2022; became VP Hardware at Ultrahuman; now founder of Project Mirage (AI + hardware, stealth)",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/lazyapoorv",
+    "https://www.projectmirage.ai/",
+    "https://athletechnews.com/ultrahuman-acquires-lazyco/",
+    "https://www.crunchbase.com/person/apoorv-shankar-2"
+   ]
+  },
+  {
+   "handle": "douglaskarr",
+   "name": "Douglas Karr",
+   "followers": 43130,
+   "identified": true,
+   "headline": "Founder/publisher of Martech Zone; DK New Media agency CEO and fractional CMO; author of Corporate Blogging for Dummies.",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 50000,
+   "high": 1000000,
+   "sources": [
+    "https://martech.zone/author/douglaskarr/",
+    "https://dknewmedia.com/"
+   ]
+  },
+  {
+   "handle": "muchoco_dev",
+   "name": "Aya Yoshioka / \u5409\u5ca1\u7dbe",
+   "followers": 10033,
+   "identified": true,
+   "headline": "Freelance web engineer behind commew.net (community site for freelancers, founded ~2018); GitHub account muchoco-dev self-identifies as aya yoshioka, consistent with X bio \"freelance engineer\" (\u3080\u3061\u3087\u3053@\u30d5",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/muchoco_dev",
+    "https://github.com/muchoco-dev",
+    "https://commew.net/"
+   ]
+  },
+  {
+   "handle": "felipecsl",
+   "name": "Felipe Lima",
+   "followers": 1731,
+   "identified": true,
+   "headline": "Felipe Lima is a Brazilian-American software engineer, former Android engineer at Airbnb (2015-2019) and payments engineer at Stripe (2019-2021), who occasionally works on a side project called Huskly",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://github.com/felipecsl",
+    "https://felipe.lima.gl/"
+   ]
+  },
+  {
+   "handle": "GrantTucker",
+   "name": "Grant Tucker",
+   "followers": 17862,
+   "identified": true,
+   "headline": "UK entertainment journalist and broadcaster; Entertainment Editor at Daily Mail/Mail on Sunday, previously Media & Entertainment Editor at The Sunday Times and Times Diary",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 150000,
+   "sources": [
+    "https://muckrack.com/grant-tucker",
+    "https://twitter.com/granttucker",
+    "https://www.iaindale.com/articles/the-rise-of-grant-tucker"
+   ]
+  },
+  {
+   "handle": "z_shavlidze",
+   "name": "Zurab Shavlidze",
+   "followers": 1338,
+   "identified": true,
+   "headline": "Zurab Shavlidze is confirmed via XDAO's own About page as Board Member and Co-Founder & COO of XDAO (a Telegram-based DAO creation platform); the X handle @z_shavlidze is independently corroborated as",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 50000,
+   "high": 1000000,
+   "sources": [
+    "https://x.com/z_shavlidze",
+    "https://xdao.app/about"
+   ]
+  },
+  {
+   "handle": "karthikkalyan90",
+   "name": "Karthik Kalyan / Karthik Kalyanaraman",
+   "followers": 2351,
+   "identified": true,
+   "headline": "Vercel engineer (company field confirmed on GitHub), co-maintainer of vercel/workflow SDK; Langtrace AI co-founder (Scale3-Labs/langtrace confirmed pinned); Coinbase claim unverified (not found on Git",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 50000,
+   "high": 500000,
+   "sources": [
+    "https://github.com/karthikscale3",
+    "https://github.com/vercel/workflow",
+    "https://x.com/karthikkalyan90"
+   ]
+  },
+  {
+   "handle": "emax",
+   "name": "Max Van Kleek",
+   "followers": 3987,
+   "identified": true,
+   "headline": "Associate Professor of Computer Science/HCI at University of Oxford; X bio claims a16z Speedrun sr006 (early-stage cohort founder, not a proven exit)",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 100000,
+   "high": 500000,
+   "sources": [
+    "https://www.cs.ox.ac.uk/people/max.vankleek/",
+    "https://x.com/emax",
+    "https://speedrun.a16z.com/faq"
+   ]
+  },
+  {
+   "handle": "heaven_computer",
+   "name": "Godmin",
+   "followers": 9228,
+   "identified": false,
+   "headline": "Pseudonymous X account/project (Heaven Computer); no verifiable public identity, gender, or biographical details found in cited sources.",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://heaven.computer/ (checked: contains no bio, name, gender, or creator attribution -- does not support the biographical claims made)"
+   ]
+  },
+  {
+   "handle": "marknutter",
+   "name": "Mark Nutter",
+   "followers": 1971,
+   "identified": false,
+   "headline": "Unverified: X handle @marknutter matched only by name coincidence to a Minneapolis GitHub user \"marknutter\" (Area Studios); the GitHub profile has no Twitter/X link or bio connecting the two accounts,",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://github.com/marknutter"
+   ]
+  },
+  {
+   "handle": "natea",
+   "name": "Nate Aune",
+   "followers": 3022,
+   "identified": true,
+   "headline": "Confirmed as Nate Aune, Medford MA-based founder of Appsembler (open-source SaaS enablement, est. 2012) and Jazkarta (Plone web consulting, est. 2004); identity corroborated across X, LinkedIn, GitHub",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 100000,
+   "high": 3000000,
+   "sources": [
+    "https://github.com/natea",
+    "https://www.linkedin.com/in/natea/",
+    "https://x.com/natea",
+    "https://appsembler.com/blog/author/natea"
+   ]
+  },
+  {
+   "handle": "saumyakedia1",
+   "name": "Saumya R. Kedia",
+   "followers": 1352,
+   "identified": true,
+   "headline": "Public X profile @saumyakedia1 confirmed as Saumya R. Kedia, a technical AI product-marketing (PMM) professional with prior work at Unacademy and Graphyapp; not a founder or executive with disclosed e",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/saumyakedia1",
+    "https://twitter.com/saumyakedia1"
+   ]
+  },
+  {
+   "handle": "mattzarb",
+   "name": "Matt Zarb-Cousin",
+   "followers": 53255,
+   "identified": true,
+   "headline": "UK anti-gambling campaigner: co-founder of Gamban, director of Clean Up Gambling, and former Jeremy Corbyn spokesperson.",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 50000,
+   "high": 750000,
+   "sources": [
+    "https://gamban.com/about",
+    "https://x.com/mattzarb"
+   ]
+  },
+  {
+   "handle": "Larpseidon",
+   "name": "Parker",
+   "followers": 13571,
+   "identified": false,
+   "headline": "Claimed pseudonymous founder of Aura Money and Perps.fun (Hyperliquid HIP-3 launchpad); no independent source corroborates this handle's link to either project, and no surname or verifiable identity e",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": []
+  },
+  {
+   "handle": "MyleneMackay",
+   "name": "Mylene Mackay",
+   "followers": 1413,
+   "identified": true,
+   "headline": "Co-founder of Barre 2 Barre, a Hong Kong/Singapore barre fitness studio brand; also a BarreAmped master trainer",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 50000,
+   "high": 500000,
+   "sources": [
+    "https://barre2barre.com/our-story/",
+    "https://barre2barre.com/team/mylene-mackay/",
+    "https://barreamped.com/2018/07/playlist-of-the-month-mylene-mackay-of-barre-2-barre/"
+   ]
+  },
+  {
+   "handle": "MindyIsenstein",
+   "name": "Mindy Isenstein",
+   "followers": 3077,
+   "identified": false,
+   "headline": "Unverified: no evidence linking the X handle @MindyIsenstein to the real a16z Perennial partner Mindy Isenstein. The a16z bio page (a16z.com/author/mindy-isenstein/) is real and confirms she is a part",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://a16z.com/author/mindy-isenstein/"
+   ]
+  },
+  {
+   "handle": "Hazer_D",
+   "name": "Harry Dyer",
+   "followers": 1204,
+   "identified": true,
+   "headline": "Harry Dyer is a UK-based actor, writer, and voice actor (Equity UK/Spotlight UK member, Kingston upon Hull) using @Hazer_D; independent public credits DO exist (IMDb, Voice123, personal site harrydyer",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 50000,
+   "sources": [
+    "https://x.com/hazer_d?lang=en",
+    "https://www.imdb.com/name/nm2426143/",
+    "https://voice123.com/voice-actor/HazerD87",
+    "https://www.harrydyer.co.uk/"
+   ]
+  },
+  {
+   "handle": "BabakGolriz",
+   "name": "Babak Golriz",
+   "followers": 1861,
+   "identified": true,
+   "headline": "Football media/podcast contributor associated with Gol Bezan (Iranian football podcast); freelance football writer based in Germany with an MA in International Relations. No verifiable net-worth data ",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/BabakGolriz",
+    "https://twitter.com/golbezan"
+   ]
+  },
+  {
+   "handle": "developerguyba",
+   "name": "Batuhan Apayd\u0131n",
+   "followers": 4914,
+   "identified": true,
+   "headline": "Batuhan Apayd\u0131n, aka developer-guy, is an Istanbul-based cloud-native/software supply-chain security engineer, CNCF Ambassador, and Docker Captain",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 150000,
+   "sources": [
+    "https://www.cncf.io/people/ambassadors/",
+    "https://www.docker.com/contributors/batuhan-apaydin/"
+   ]
+  },
+  {
+   "handle": "AdolfoUsier",
+   "name": "Adolfo Usier",
+   "followers": 7860,
+   "identified": true,
+   "headline": "CPO (not confirmed as CEO) of Neura AI; creator/maintainer of OpenCrabs \u2014 identity link confirmed independently via his own GitHub (github.com/adolfousier) and Neura AI's company blog (blog.meetneura.",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 100000,
+   "sources": [
+    "https://github.com/adolfousier",
+    "https://github.com/adolfousier/opencrabs",
+    "https://blog.meetneura.ai/author/adolfo/",
+    "https://www.linkedin.com/in/adolfousier/"
+   ]
+  },
+  {
+   "handle": "winebaizou",
+   "name": "\u91ce\u4e2d\u5065\u543e",
+   "followers": 33034,
+   "identified": true,
+   "headline": "note.com/winebaizou confirms \u91ce\u4e2d\u5065\u543e (Kengo Nonaka) as an engineer interested in tea ceremony, wine, and art, and links to the same @winebaizou handle \u2014 identity is corroborated. But no source contains a",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://note.com/winebaizou"
+   ]
+  },
+  {
+   "handle": "NedHalawani",
+   "name": "Mohanned Halawani",
+   "followers": 3200,
+   "identified": true,
+   "headline": "Founder/CEO of Crypto PR, a small Middle East-based Web3/blockchain PR agency (est. 2017); identity confirmed via Crunchbase and LinkedIn, but no public net-worth evidence exists for him personally",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/nedhalawani",
+    "https://www.crunchbase.com/person/mohanned-halawani",
+    "https://ae.linkedin.com/in/mohannedhalawani"
+   ]
+  },
+  {
+   "handle": "vojtajina",
+   "name": "Vojta Jina",
+   "followers": 5181,
+   "identified": true,
+   "headline": "GitHub profile confirms vojtajina is Vojta Jina, creator of the Karma test runner and core AngularJS/Traceur contributor; more recently listed as co-founder at a stealth AI startup, but no funding, ex",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 200000,
+   "high": 2000000,
+   "sources": [
+    "https://github.com/vojtajina",
+    "https://www.getprog.ai/profile/46647"
+   ]
+  },
+  {
+   "handle": "Ath",
+   "name": "Athan Didaskalou",
+   "followers": 3873,
+   "identified": false,
+   "headline": "Athan Didaskalou, co-founder/chief strategy officer of July, the Australian luggage brand (identity of @Ath handle unconfirmed).",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://july.com/us/the-details/",
+    "https://www.cntraveler.com/story/july-carry-all-weekender-bag",
+    "https://www.forbes.com.au/news/entrepreneurs/how-two-melbourne-mates-turned-july-into-a-luggage-empire/"
+   ]
+  },
+  {
+   "handle": "owenthcarey",
+   "name": "Owen Carey",
+   "followers": 2040,
+   "identified": true,
+   "headline": "GitHub profile (self-linked to X @owenthcarey) describes a Catholic software engineer, YC W20 founder (Jamiphy), maintaining several small open-source projects (PythonNative, WeaveFFI, Wybthon, etc.)",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 200000,
+   "sources": [
+    "https://github.com/owenthcarey",
+    "https://x.com/owenthcarey"
+   ]
+  },
+  {
+   "handle": "JorgeCastilloPr",
+   "name": "Jorge Castillo",
+   "followers": 21510,
+   "identified": true,
+   "headline": "Android engineer at Disney+, formerly X/Twitter; author of Jetpack Compose Internals and creator of a paid Compose course",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 150000,
+   "high": 800000,
+   "sources": [
+    "https://composeinternals.com/",
+    "https://x.com/JorgeCastilloPr"
+   ]
+  },
+  {
+   "handle": "DynamicWebPaige",
+   "name": "Paige Bailey",
+   "followers": 74887,
+   "identified": true,
+   "headline": "Paige Bailey, AI Developer Relations Engineering Lead at Google DeepMind (formerly GitHub/Microsoft, Azure Research, NASA); identity and follower count corroborated, but a salaried engineer with no pu",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/DynamicWebPaige",
+    "https://github.com/dynamicwebpaige",
+    "https://www.linkedin.com/in/dynamicwebpaige/"
+   ]
+  },
+  {
+   "handle": "TarcisoRenova",
+   "name": "Tarciso Morais",
+   "followers": 299515,
+   "identified": true,
+   "headline": "Brazilian political commentator/blogger on X, associated with Renova M\u00eddia (Olavista/pro-Bolsonaro aligned outlet); identity of handle confirmed but no public wealth evidence exists",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": []
+  },
+  {
+   "handle": "smalzner",
+   "name": "Stefan Malzner",
+   "followers": 1742,
+   "identified": true,
+   "headline": "Vienna-based solo founder/operator of Franz, an indie all-in-one messaging desktop app (1M+ downloads, no VC funding, one-person operation).",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 100000,
+   "high": 1500000,
+   "sources": [
+    "https://meetfranz.com/about",
+    "https://x.com/smalzner",
+    "https://at.linkedin.com/in/smalzner"
+   ]
+  },
+  {
+   "handle": "afsimsir",
+   "name": "Furkan Simsir",
+   "followers": 1990,
+   "identified": true,
+   "headline": "Amsterdam-based indie app developer and founder of Sir Studio (apps: Calorific, Capture, Reporting, Reporting for RevenueCat, Channels Pro), listed as developer via sir.studio's own linked X account.",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/afsimsir",
+    "https://sir.studio/"
+   ]
+  },
+  {
+   "handle": "hongqin",
+   "name": "Hong Qin",
+   "followers": 1220,
+   "identified": false,
+   "headline": "Unconfirmed \u2014 possible name collision between Hong Qin (Old Dominion University, AI/ML healthcare) and a separate Hong Qin (UTC/Chattanooga, computational biology/aging research)",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://www.lions.odu.edu/~hqin/ (does not mention any Twitter/X handle)",
+    "https://blog.utc.edu/hong-qin/ (a different Hong Qin, different university, surfaced in same search for @hongqin)",
+    "https://github.com/hongqin (real page but does not establish net worth or confirm which Hong Qin controls @hongqin)"
+   ]
+  },
+  {
+   "handle": "G77deusXmachina",
+   "name": "Phuoc Thinh",
+   "followers": 1215,
+   "identified": true,
+   "headline": "Identified via bio t.co redirect to GitHub profile PhamNguyenPhuocThinh, which links back to X @G77deusXmachina (confirmed: GitHub profile does list this X handle). GitHub shows only 7 followers, hobb",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://github.com/PhamNguyenPhuocThinh"
+   ]
+  },
+  {
+   "handle": "kpatt1011",
+   "name": "Keith Pattison",
+   "followers": 1830,
+   "identified": true,
+   "headline": "Chief Technologist / founder at Black Flag Design, a Denver-based software studio (per LinkedIn/X bio); small project-based studio charging $20K-$44K+ per engagement, not evidence of personal net wort",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 300000,
+   "sources": [
+    "https://x.com/kpatt1011",
+    "https://www.linkedin.com/in/kpatt1011/",
+    "https://www.blackflag.design/",
+    "https://github.com/kpatt1011"
+   ]
+  },
+  {
+   "handle": "gondal36",
+   "name": "Talal Ahmad Gondal",
+   "followers": 1130,
+   "identified": true,
+   "headline": "X/Threads/Instagram/Facebook/Medium/about.me all consistently identify @gondal36 as Talal Ahmad Gondal (Dallas-based; YC S21, VC fund-of-funds manager, ex-Amazon per bio) \u2014 identity is solid, but no f",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/gondal36"
+   ]
+  },
+  {
+   "handle": "markwlamplugh",
+   "name": "Mark W. Lamplugh",
+   "followers": 10220,
+   "identified": true,
+   "headline": "Self-described CMO, TV host of Street Level Marketing Show, author, board member; multiple ventures (incl. recovery-industry CEO roles, ClawHire); no independent net-worth disclosure exists",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/markwlamplugh"
+   ]
+  },
+  {
+   "handle": "Luv2gofastHoltz",
+   "name": "Eric Holtz",
+   "followers": 2765,
+   "identified": false,
+   "headline": "Self-described Ontarian/North American machinist and production optimization specialist; Tesla investor/owner (bio text appears truncated/corrupted in source scrape)",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/Luv2gofastHoltz"
+   ]
+  },
+  {
+   "handle": "kerenshahar5",
+   "name": "Keren Shahar",
+   "followers": 26965,
+   "identified": true,
+   "headline": "Israeli AI/digital-marketing strategist, speaker, and Ynet AI columnist; runs a solo consulting/speaking practice via keren-shahar.com",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 50000,
+   "high": 500000,
+   "sources": [
+    "https://keren-shahar.com/about/",
+    "https://x.com/kerenshahar5"
+   ]
+  },
+  {
+   "handle": "WarcraftYax",
+   "name": "Yax (public alias; legal name not confirmed)",
+   "followers": 2680,
+   "identified": true,
+   "headline": "Engineer/team member at Archon (parent co. of Warcraft Logs, FF Logs, ESO Logs, SWTOR Logs, Wipefest) \u2014 NOT the founder (founder is \"Kihra\"); Archon is a small (~10 employee), Patreon/community-funded",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/WarcraftYax",
+    "https://www.archon.gg/about",
+    "https://www.wowhead.com/news/introducing-archon-warcraft-logs-parent-company-rebranded-335303"
+   ]
+  },
+  {
+   "handle": "th3cyb3rc0p",
+   "name": "Mayur Parmar",
+   "followers": 5055,
+   "identified": true,
+   "headline": "Mayur Parmar, a Vadodara-based information-security researcher/CTF player using the th3cyb3rc0p handle; GitHub profile self-links to the X account, confirming identity, but shows only hobbyist-scale a",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://github.com/th3cyb3rc0p"
+   ]
+  },
+  {
+   "handle": "pemirdag",
+   "name": "Pinar Emirdag",
+   "followers": 1064,
+   "identified": true,
+   "headline": "X handle confirmed as Pinar Emirdag, a fintech/markets business-development executive (founder of SciencePeers; ex-Citigroup, London Stock Exchange Group, ICAP, Liquidnet; UK Digital Currency Associat",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/pemirdag",
+    "https://www.marketswiki.com/wiki/Pinar_Emirdag"
+   ]
+  },
+  {
+   "handle": "Joab_Jackson",
+   "name": "Joab Jackson",
+   "followers": 6714,
+   "identified": true,
+   "headline": "Freelance technology journalist covering enterprise IT, cloud, storage, Kubernetes and AI (bylines at The New Stack, The Register, Computerworld, CIO)",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://muckrack.com/joab-jackson",
+    "https://x.com/Joab_Jackson"
+   ]
+  },
+  {
+   "handle": "SamJWasserman",
+   "name": "Sam Wasserman",
+   "followers": 1024,
+   "identified": false,
+   "headline": "Emmy-winning executive producer credited by the Television Academy for Create Together With Joseph Gordon-Levitt (real person/award, but X handle match unverified).",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://www.televisionacademy.com/bios/sam-wasserman",
+    "https://deadline.com/2020/09/emmy-awards-juried-winners-2020-list-1203028580/"
+   ]
+  },
+  {
+   "handle": "amrmkayid",
+   "name": "Amr Kayid",
+   "followers": 1033,
+   "identified": true,
+   "headline": "AI research engineer; early/founding technical team member at Cohere (joined ~2019-2021 via FORai group), now listed as Principal Research Engineer; identity corroborated by GitHub, personal site, and",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 100000,
+   "high": 2000000,
+   "sources": [
+    "https://github.com/amrmkayid",
+    "https://kayid.ca/",
+    "https://ca.linkedin.com/in/amrmkayid"
+   ]
+  },
+  {
+   "handle": "valorkin",
+   "name": "Dmitriy Shekhovtsov",
+   "followers": 9910,
+   "identified": true,
+   "headline": "Dmitriy Shekhovtsov (@valorkin) is a Ukraine-based Google Developer Expert for Angular, founder of Valor Software (open-source consultancy, ngx-bootstrap etc.), and co-founder/CTO of Zephyr Cloud",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 300000,
+   "high": 3000000,
+   "sources": [
+    "https://github.com/valorkin",
+    "https://github.com/valor-software",
+    "https://x.com/valorkin"
+   ]
+  },
+  {
+   "handle": "hasin",
+   "name": "Hasin Hayder",
+   "followers": 7324,
+   "identified": true,
+   "headline": "Hasin Hayder is a Dhaka-based software engineer/founder at TyroLabs, TyroPlugins, and HappyMonster, and co-founder/creator of HappyAddons (400K+ WordPress installs)",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 50000,
+   "high": 750000,
+   "sources": [
+    "https://hasin.me/",
+    "https://github.com/hasinhayder",
+    "https://x.com/hasin"
+   ]
+  },
+  {
+   "handle": "derhalis",
+   "name": "\u00f6nder halis",
+   "followers": 36551,
+   "identified": true,
+   "headline": "X account (active since 2009) belongs to a real person named \u00f6nder halis, but tweets found are personal/casual Turkish-language commentary with no evidence of a company, product, job, or financial act",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/derhalis"
+   ]
+  },
+  {
+   "handle": "maveenbhat",
+   "name": "Maveen Mushtaq",
+   "followers": 2396,
+   "identified": true,
+   "headline": "GitHub profile (self-linked to @maveenbhat via listed Twitter link) identifies Maveen Mushtaq as a Germany-based founder of \"913.ai,\" a very thin/low-signal profile (3 GitHub followers, 14 repos); no ",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://github.com/maveenbhat"
+   ]
+  },
+  {
+   "handle": "Deam147_",
+   "name": "Deam Saavedra Carranza",
+   "followers": 4457,
+   "identified": true,
+   "headline": "Costa Rican League of Legends esports analyst for Team Heretics (competitive ID Deam147); prior coaching stints at Beast Esports and OG Esports.",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 5000,
+   "high": 60000,
+   "sources": [
+    "https://x.com/Deam147_",
+    "https://lol.fandom.com/wiki/Deam",
+    "https://liquipedia.net/leagueoflegends/Team_Heretics"
+   ]
+  },
+  {
+   "handle": "AndyLeonard",
+   "name": "Andy Leonard",
+   "followers": 5777,
+   "identified": true,
+   "headline": "Founder and Chief Data Engineer at Enterprise Data & Analytics (EDNA); Fabric/ADF/SSIS data engineering consultant, trainer",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 50000,
+   "high": 1000000,
+   "sources": [
+    "https://andyleonard.blog/",
+    "https://andyleonard.blog/andy/"
+   ]
+  },
+  {
+   "handle": "istiaak",
+   "name": "Istiak Rayhan",
+   "followers": 1335,
+   "identified": true,
+   "headline": "Co-founder of DotCamp LLC and product/marketing lead behind WordPress plugins including Ultimate Blocks, WP Table Builder",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 0,
+   "high": 300000,
+   "sources": [
+    "https://x.com/istiaak",
+    "https://ultimateblocks.com/author/istiak/",
+    "https://www.linkedin.com/in/irayhan/"
+   ]
+  },
+  {
+   "handle": "buildwithsid",
+   "name": "Siddharth Meena",
+   "followers": 6625,
+   "identified": true,
+   "headline": "Publicly linked as the maker of Make Design (make.design), an AI design generator launched ~June 2026; no public funding, revenue, exit, or wealth evidence beyond a product launch tweet",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 10000,
+   "high": 200000,
+   "sources": [
+    "https://x.com/buildwithsid"
+   ]
+  },
+  {
+   "handle": "LukeAltmann",
+   "name": "Luke Altmann",
+   "followers": 1982,
+   "identified": false,
+   "headline": "Claimed local SEO marketer tied to \"Local Client Solutions\"; no independent LinkedIn/GitHub/press profile confirms identity, and neither cited source could be independently verified (X profile fetch b",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/LukeAltmann (unverifiable - fetch returned 402 Payment Required)",
+    "https://twstalker.com/LukeAltmann (unverifiable - fetch returned 403 Forbidden; low-quality scraper site, not an authoritative identity or financial source)"
+   ]
+  },
+  {
+   "handle": "karimweb3",
+   "name": "Karim Chaib",
+   "followers": 1396,
+   "identified": true,
+   "headline": "CEO of Web3Intelligence.com (founded 2017, ~$4.5M raised from Gate.io/DAO Maker/Shima Capital per CBInsights); prior career building crypto/digital-asset infrastructure at Soci\u00e9t\u00e9 G\u00e9n\u00e9rale, Avaloq, an",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 100000,
+   "high": 3000000,
+   "sources": [
+    "https://x.com/karimweb3",
+    "https://ch.linkedin.com/in/kczrh",
+    "https://blocktelegraph.io/cortex-karim-chaib-cryptocurrency-with-ai/",
+    "https://coruzant.com/profiles/karim-chaib/"
+   ]
+  },
+  {
+   "handle": "andressentis",
+   "name": "Andres Sentis",
+   "followers": 1013,
+   "identified": true,
+   "headline": "Buenos Aires-based full-stack designer and head/founder of Ander.Agency, a small self-owned Webflow/branding agency (3-person team).",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 10000,
+   "high": 150000,
+   "sources": [
+    "https://ander.agency/",
+    "https://webflow.com/@andressentis",
+    "https://www.behance.net/andressentis/info"
+   ]
+  },
+  {
+   "handle": "AddyCrezee",
+   "name": "Addy Crezee",
+   "followers": 3480,
+   "identified": true,
+   "headline": "Addy Crezee is a confirmed co-author/byline at thehype.news (an AI-news blog), alongside Nick Trenkler; no independent evidence of a \"/functio\" tie or founder role beyond the account bio, which could ",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://thehype.news/ (confirmed: lists Addy Crezee as a co-author/byline; no financial data)",
+    "https://x.com/AddyCrezee (could not verify - fetch returned HTTP 402, bio/identity claims unconfirmed)"
+   ]
+  },
+  {
+   "handle": "tarasowski",
+   "name": "Dimitri Tarasowski",
+   "followers": 5622,
+   "identified": true,
+   "headline": "GitHub confirms @tarasowski is Dimitri (Dimi) Tarasowski, a full-stack engineer, certified DevOps trainer, and HEC Paris-educated founder of the small indie SaaS \"MVP Foundry\"",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 0,
+   "high": 150000,
+   "sources": [
+    "https://github.com/tarasowski"
+   ]
+  },
+  {
+   "handle": "thomasunise",
+   "name": "Thomas Unise",
+   "followers": 1142,
+   "identified": true,
+   "headline": "Founder/Head of AI at eeko systems; fractional CMO and marketing/growth consultant with 15+ years experience.",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/thomasunise",
+    "https://thomasunise.com/",
+    "https://eeko.systems"
+   ]
+  },
+  {
+   "handle": "aryaniyaps",
+   "name": "Aryan Iyappan",
+   "followers": 1111,
+   "identified": true,
+   "headline": "Chennai-based 19-year-old IT student and aspiring founder/AI engineer; founder of hospitaljobs.in and builder of open-source projects",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 10000,
+   "sources": [
+    "https://github.com/aryaniyaps"
+   ]
+  },
+  {
+   "handle": "chihaya_cos",
+   "name": "Unverified \u2014 likely misidentified",
+   "followers": 0,
+   "identified": false,
+   "headline": "Could not confirm the X handle @chihaya_cos belongs to any specific cosplay personality; \"Chihaya\" maps to multiple unrelated cosplay/IG accounts (583 to 131K followers) with no evidence linking any t",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://www.instagram.com/chihaya_cosplay/",
+    "https://www.instagram.com/chihayaan/",
+    "https://www.instagram.com/chihaya.cos/"
+   ]
+  },
+  {
+   "handle": "Muskanjain0401",
+   "name": "Muskan Jain",
+   "followers": 21385,
+   "identified": false,
+   "headline": "Search evidence associates @Muskanjain0401 with Smallest_AI (a voice-agent startup), not Supermemory as claimed; likely conflated with a different \"Muskan Jain\" account (several similarly-named accoun",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/Muskanjain0401 (real profile, but does not corroborate Supermemory claim)"
+   ]
+  },
+  {
+   "handle": "iMichaelTen",
+   "name": "Michael Ten",
+   "followers": 6757,
+   "identified": true,
+   "headline": "Identified as Michael Ten, a U.S.-based author, artist, and futurist who writes about life extension, psychiatric ethics (Szaszian), and basic income; self-published author of longevity-focused books,",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 50000,
+   "sources": [
+    "https://michaelten.com/ (confirms identity, bio, and links to @iMichaelTen; also shows Patreon donation ask, no net-worth/income data)"
+   ]
+  },
+  {
+   "handle": "robertrichman",
+   "name": "Robert Richman",
+   "followers": 14260,
+   "identified": true,
+   "headline": "Corporate culture speaker/consultant; former Zappos Culture Strategist, co-creator of Zappos Insights, author of The Culture Blueprint",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 100000,
+   "high": 1500000,
+   "sources": [
+    "https://robertrichman.com/",
+    "https://robertrichman.com/about/"
+   ]
+  },
+  {
+   "handle": "MsMelChen",
+   "name": "Melissa Chen",
+   "followers": 332860,
+   "identified": true,
+   "headline": "Singapore-born journalist/commentator, Spectator contributing editor, Ideas Beyond Borders co-founder/managing director",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 0,
+   "high": 500000,
+   "sources": [
+    "https://x.com/MsMelChen",
+    "https://en.wikipedia.org/wiki/Melissa_Chen"
+   ]
+  },
+  {
+   "handle": "Vedantsx",
+   "name": "Vedant Anand",
+   "followers": 1728,
+   "identified": false,
+   "headline": "Self-described founder of BAGS/Bags App (getbags.app), a merchant-of-record/stablecoin payments startup backed only by accelerator/cloud programs (Canopy, Superteam India, AWS Startups) \u2014 no disclosed",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://www.getbags.app/"
+   ]
+  },
+  {
+   "handle": "wszp",
+   "name": "Peter W. Szabo",
+   "followers": 3327,
+   "identified": true,
+   "headline": "Peter W. Szabo is a UX practitioner/consultant and author of User Experience Mapping; his Kaizen-UX site frames his curr",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 250000,
+   "high": 2500000,
+   "sources": [
+    "https://x.com/wszp",
+    "https://kaizen-ux.com/"
+   ]
+  },
+  {
+   "handle": "nagaokafp",
+   "name": "\u9577\u5ca1\u7406\u77e5 (Nagaoka Michitomo)",
+   "followers": 2085,
+   "identified": true,
+   "headline": "Representative employee/president of \u9577\u5ca1FP\u4e8b\u52d9\u6240\u5408\u540c\u4f1a\u793e, a small housing-focused financial planning office (sole proprietorship since 2020, incorporated July 2025); ~20 years as a housing-specialist FP with ",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 0,
+   "high": 300000,
+   "sources": [
+    "https://x.com/nagaokafp",
+    "https://nagaokafp.co.jp/",
+    "https://nagaokafp.co.jp/2025/05/04/aboutus/"
+   ]
+  },
+  {
+   "handle": "ZacharyDash",
+   "name": "Zachary Dash",
+   "followers": 8622,
+   "identified": true,
+   "headline": "Identity confirmed (GitHub bio quote, name, and personal-domain link match the X handle @zacharydash), but no public evidence of income, funding, exits, or assets exists anywhere in the cited sources ",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://github.com/ZacharyDash",
+    "https://x.com/ZacharyDash"
+   ]
+  },
+  {
+   "handle": "oef75",
+   "name": "Othman El Ferdaous",
+   "followers": 26919,
+   "identified": true,
+   "headline": "Moroccan diplomat and politician: Ambassador of Morocco to C\u00f4te d'Ivoire; formerly Morocco's Minister of Culture, Youth and Sports (2020-2021)",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/oef75",
+    "https://fr.wikipedia.org/wiki/Othman_El_Ferdaous",
+    "https://www.wikidata.org/wiki/Q30728164"
+   ]
+  },
+  {
+   "handle": "sergeiklimov",
+   "name": "Sergei Klimov",
+   "followers": 3269,
+   "identified": true,
+   "headline": "Confirmed as Sergei Klimov, General Manager/co-founder of Charlie Oscar (indie studio behind Gremlins, Inc. and Spire of Sorcery), also program director for Games Industry Law Summit; based in Vilnius",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 10000,
+   "high": 300000,
+   "sources": [
+    "https://bsky.app/profile/sergeiklimov.bsky.social",
+    "https://en.wikipedia.org/wiki/Gremlins%2C_Inc.",
+    "https://wnhub.io/news/indie/item-19237"
+   ]
+  },
+  {
+   "handle": "siliconvmg",
+   "name": "Anant Sinha",
+   "followers": 3766,
+   "identified": true,
+   "headline": "Anant Sinha, a personal X account (@siliconvmg confirmed as his handle) runs \"SF Archives,\" a personal photo-documentation hobby project under the name Silicon Valley Media Group; the site itself disc",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 50000,
+   "sources": [
+    "https://siliconvmg.com/",
+    "https://x.com/siliconvmg"
+   ]
+  },
+  {
+   "handle": "rmcastil",
+   "name": "Ryan Castillo",
+   "followers": 1042,
+   "identified": true,
+   "headline": "Co-founder of Knowatoa (AI search analytics/SEO tool); also linked with Wafris; bootstrapped indie SaaS builder/developer.",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 10000,
+   "high": 500000,
+   "sources": [
+    "https://knowatoa.com/",
+    "https://knowatoa.com/about",
+    "https://x.com/rmcastil",
+    "https://www.linkedin.com/in/rmcastil/"
+   ]
+  },
+  {
+   "handle": "AlanShiflett",
+   "name": "Alan Shiflett",
+   "followers": 1118,
+   "identified": true,
+   "headline": "Alan Shiflett is GM of Domain Aftermarket at GoDaddy (oversees Afternic), 15+ year GoDaddy veteran and ICA board member; identity corroborated by independent third-party (domain-industry journalist El",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 200000,
+   "high": 1500000,
+   "sources": [
+    "https://x.com/DInvesting/status/2067603691696177330",
+    "https://www.linkedin.com/in/ashiflett/",
+    "https://www.internetcommerce.org/blog/welcoming-alan-shiflett-to-the-ica-board-of-directors/"
+   ]
+  },
+  {
+   "handle": "GauravWriting",
+   "name": "Gaurav Bidasaria",
+   "followers": 1474,
+   "identified": true,
+   "headline": "TechWiser editor and technology writer; previously published at Guiding Tech and Make Tech Easier.",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://techwiser.com/author/gaurav/",
+    "https://twitter.com/GauravWriting"
+   ]
+  },
+  {
+   "handle": "dylan_works_",
+   "name": "Dylan Zhang",
+   "followers": 1519,
+   "identified": true,
+   "headline": "UIUC CS PhD student (ALTA lab, advised by Hao Peng) in language-model post-training; publishes as Shizhuo Dylan Zhang; Google Student Researcher",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 0,
+   "high": 30000,
+   "sources": [
+    "https://dylanzsz.github.io/ (confirms identity: Dylan Zhang, UIUC PhD student, links to @dylan_works_ \u2014 but contains no financial/net-worth information)"
+   ]
+  },
+  {
+   "handle": "ereckers",
+   "name": "Ed Reckers",
+   "followers": 1080,
+   "identified": true,
+   "headline": "Founder and lead WordPress developer/consultant at Red Bridge Internet, a small San Francisco WordPress development agency",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 50000,
+   "high": 500000,
+   "sources": [
+    "https://github.com/ereckers",
+    "https://profiles.wordpress.org/ereckers/",
+    "https://x.com/ereckers",
+    "https://www.redbridgenet.com/author/ereckers/"
+   ]
+  },
+  {
+   "handle": "Ronalfa",
+   "name": "Ron W. Alfa, MD, PhD",
+   "followers": 7025,
+   "identified": true,
+   "headline": "CEO/co-founder of Noetik (precision oncology AI); former SVP/Head of Research at Recursion; Stanford MD-PhD. Net worth is entirely unpriced private-company equity with no disclosed valuation, funding ",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://www.noetik.ai/team",
+    "https://www.linkedin.com/in/ron-alfa",
+    "https://x.com/Ronalfa",
+    "https://x.com/RecursionChris/status/2009284028688417145"
+   ]
+  },
+  {
+   "handle": "halfmage",
+   "name": "Gerrit Halfmann",
+   "followers": 1115,
+   "identified": true,
+   "headline": "Germany-based interdisciplinary designer/developer behind Pixelarticons, Majesticons, and LearnSlice (free icon sets and design-systems side projects)",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 50000,
+   "sources": [
+    "https://github.com/halfmage",
+    "https://gerrithalfmann.com/",
+    "https://x.com/halfmage"
+   ]
+  },
+  {
+   "handle": "nic_amadio",
+   "name": "Nicola Amadio",
+   "followers": 2538,
+   "identified": true,
+   "headline": "Nicola Amadio is a European software engineer (Oracle, ex-Amazon/Samsung) turned tech-career content/coaching operator, founder of Euro Top Tech",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 150000,
+   "high": 800000,
+   "sources": [
+    "https://x.com/nic_amadio",
+    "https://www.linkedin.com/posts/nicola-amadio_my-salary-journey-as-a-software-engineer-activity-7327577144983711744-meq-"
+   ]
+  },
+  {
+   "handle": "SAAdvantage",
+   "name": "Dan Weston",
+   "followers": 14512,
+   "identified": true,
+   "headline": "Cricket recruitment and strategy consultant operating as Sports Analytics Advantage; self-described Birmingham Phoenix/T20 analyst and author",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 0,
+   "sources": [
+    "https://x.com/SAAdvantage",
+    "https://twitter.com/SAAdvantage"
    ]
   }
  ]

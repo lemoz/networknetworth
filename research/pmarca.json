@@ -3,8 +3,8 @@
   "account": "pmarca",
   "name": "@pmarca",
   "totalFollowers": 4412590,
-  "researched": 279,
-  "identified": 279,
+  "researched": 305,
+  "identified": 305,
   "note": "Board seeded from the cross-account researched pool: every entry verified as a follower via the X follow-relationship API. Evidence-based ranges with adversarial verification.",
   "sampleDist": {
    "sampled": 2000,
@@ -26,10 +26,10 @@
    ]
   },
   "estimate": {
-   "total": 6490238544.476004,
-   "low": 3245119272.238002,
-   "high": 12980477088.952007,
-   "floor": 1114041500.0
+   "total": 6368883880.458331,
+   "low": 3184441940.2291656,
+   "high": 12737767760.916662,
+   "floor": 1137176500.0
   }
  },
  "people": [
@@ -4257,6 +4257,410 @@
    "high": 10000000,
    "sources": [
     "https://videonest.co"
+   ]
+  },
+  {
+   "handle": "Madisonkanna",
+   "name": "Madison Kanna",
+   "followers": 81453,
+   "identified": true,
+   "headline": "Engineer at Baseten (AI inference); personal site, GitHub, and Substack confirm identity; X account content (Baseten, \"Infer This\" show, SF-based) matches. No public financial data exists for her \u2014 ne",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 50000,
+   "high": 400000,
+   "sources": [
+    "https://madisonkanna.com/",
+    "https://github.com/madisonkanna",
+    "https://x.com/Madisonkanna"
+   ]
+  },
+  {
+   "handle": "PaoloZanetto",
+   "name": "Paolo Zanetto",
+   "followers": 2367,
+   "identified": true,
+   "headline": "Italian corporate/public-affairs executive; CEO of Excellera Advisory Group and a Cattaneo Zanetto & Co. principal/partner",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 1000000,
+   "high": 15000000,
+   "sources": [
+    "https://www.engage.it/agenzie/community-cattaneo-zanetto-e-coe-il-fondo-xenon-uniscono-le-forze-nasce-la-holdingexcellera-advisory-group.aspx",
+    "https://www.engage.it/agenzie/icg-e-il-nuovo-socio-di-maggioranza-di-excellera-advisory-group-focus-sulla-crescita-internazionale.aspx"
+   ]
+  },
+  {
+   "handle": "fyrejason",
+   "name": "Jason Turnquist",
+   "followers": 1000,
+   "identified": true,
+   "headline": "Jason Turnquist is co-founder/CEO of Fyresite, a Phoenix-based Shopify/eCommerce web and app development agency, and co-founder of ProPlaintiff.ai, a small legaltech SaaS startup (won a regional Arizo",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 100000,
+   "high": 1000000,
+   "sources": [
+    "https://www.linkedin.com/in/jason-turnquist/",
+    "https://www.fyresite.com/case-studies/proplaintiff-ai/",
+    "https://attorneyatlawmagazine.com/stories/vendor-interview/proplaintiff-ai"
+   ]
+  },
+  {
+   "handle": "tinatavcar",
+   "name": "Tina Tav\u010dar",
+   "followers": 1362,
+   "identified": true,
+   "headline": "Ljubljana-based freelance/contract mobile UI designer (Dribbble shows work for Azumio health apps); X handle identity unverifiable (fetch blocked), no evidence of funding, equity, or exits",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 20000,
+   "sources": [
+    "https://dribbble.com/tinatavcar"
+   ]
+  },
+  {
+   "handle": "ben_guggenheim",
+   "name": "Benjamin Guggenheim",
+   "followers": 3573,
+   "identified": true,
+   "headline": "AI & Tech Brief writer/author at WP Intelligence, with prior reporting roles at POLITICO, Tax Notes, and The New York Times",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 150000,
+   "sources": [
+    "https://wpintelligence.washingtonpost.com/staff/benjamin-guggenheim/",
+    "https://wpintelligence.washingtonpost.com/about-us/"
+   ]
+  },
+  {
+   "handle": "AndrewAsksHow",
+   "name": "Andrew Forte",
+   "followers": 38247,
+   "identified": true,
+   "headline": "Andrew Forte, Business Development Lead at Claynosaurz and host of the \"Andrew Asks How\" podcast; no direct public wealth evidence (no disclosed equity, token holdings, or income data).",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 200000,
+   "sources": [
+    "https://x.com/AndrewAsksHow",
+    "https://www.claynosaurz.com/team"
+   ]
+  },
+  {
+   "handle": "timothymarc",
+   "name": "Timothy Marc",
+   "followers": 4253,
+   "identified": true,
+   "headline": "Online-business founder and marketer behind timothymarc.com, TMARC Agency, Secret Society Mastermind, BulletBooks, Scout",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 300000,
+   "high": 3000000,
+   "sources": [
+    "https://x.com/timothymarc",
+    "https://timothymarc.com/"
+   ]
+  },
+  {
+   "handle": "PKoellinger",
+   "name": "Philipp Koellinger",
+   "followers": 1983,
+   "identified": true,
+   "headline": "Prof. Dr. Philipp Koellinger, Co-Founder & CEO of DeSci Labs, professor at VU Amsterdam, published in genoeconomics",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 100000,
+   "high": 2000000,
+   "sources": [
+    "https://x.com/pkoellinger",
+    "https://research.vu.nl/en/persons/philipp-koellinger/",
+    "https://www.crunchbase.com/organization/desci-labs"
+   ]
+  },
+  {
+   "handle": "burakborhan",
+   "name": "Burak Borhan",
+   "followers": 1010,
+   "identified": true,
+   "headline": "Red Hat Regional Director covering Saudi Arabia/North Gulf/Levant (MEA ecosystems); LinkedIn corroborates the role, but no independent wealth signals (no equity, ownership, or exit history) were found",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 150000,
+   "high": 600000,
+   "sources": [
+    "https://x.com/burakborhan (unverified this pass - fetch blocked)",
+    "https://www.linkedin.com/posts/burakborhan_redhatsummit-teamwork-innovation-activity-7129531540933345280-H4l8",
+    "https://www.redhat.com/ (generic corporate homepage, not a specific bio confirmation)"
+   ]
+  },
+  {
+   "handle": "herelle_jean",
+   "name": "Jean Herelle",
+   "followers": 2016,
+   "identified": true,
+   "headline": "Jean Herelle, Co-Founder &amp; COO of CrunchDAO (Web3/Solana collective-intelligence data-science platform); identity confirmed via Solana Incubator's own tweets tagging @herelle_jean as CrunchDAO's f",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 100000,
+   "high": 5000000,
+   "sources": [
+    "https://x.com/herelle_jean",
+    "https://x.com/incubator/status/1909622674629722486",
+    "https://theorg.com/org/crunch-dao/org-chart/jean-herelle",
+    "https://www.linkedin.com/in/jean-herelle/"
+   ]
+  },
+  {
+   "handle": "warrioraashuu",
+   "name": "Ashutosh Kumar",
+   "followers": 1726,
+   "identified": true,
+   "headline": "Ashutosh Kumar (aashuu/codeaashu), founder of DevDisplay and maker of several small indie SaaS/dev tools; no disclosed funding, revenue, or exit",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 50000,
+   "sources": [
+    "https://github.com/codeaashu"
+   ]
+  },
+  {
+   "handle": "jfigueres",
+   "name": "Jaime Figueres Ulate",
+   "followers": 2785,
+   "identified": true,
+   "headline": "Independent digital transformation, AI, and innovation consultant based in San Jos\u00e9, Costa Rica; NOT related to former Costa Rican president Jos\u00e9 Mar\u00eda Figueres Olsen despite surname overlap",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 150000,
+   "sources": [
+    "https://twitter.com/jfigueres?lang=en"
+   ]
+  },
+  {
+   "handle": "DanielNorero",
+   "name": "Daniel Norero",
+   "followers": 6092,
+   "identified": true,
+   "headline": "Agricultural engineer, co-founder/COO of Neocrop Technologies, a pre-seed-stage gene-editing agbiotech startup based in Valdivia, Chile (confirmed via LinkedIn, ChileBIO, DF.cl, and industry press cov",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 50000,
+   "sources": [
+    "https://www.linkedin.com/in/daniel-norero/",
+    "https://mundoagro.io/cl/neocrop-technologies-biotecnologia-de-precision-hecha-en-chile/",
+    "https://chilebio.cl/2024/02/21/startup-valdiviana-pone-a-chile-a-la-vanguardia-en-agricultura-sostenible-a-traves-del-desarrollo-de-trigo-editado-tolerante-a-sequia/",
+    "https://www.df.cl/df-lab/innovacion-y-startups/neocrop-technologies-levanta-ronda-pre-semilla-para-acelerar-su"
+   ]
+  },
+  {
+   "handle": "timothypost",
+   "name": "Timothy Post",
+   "followers": 2382,
+   "identified": true,
+   "headline": "Timothy Post is a LandVest/Christie's luxury real estate agent based in Dorset/Manchester, serving Southern Vermont; moved to Dorset full-time in 2022, prior career background unverified.",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 200000,
+   "high": 1500000,
+   "sources": [
+    "https://landvest.com/realestate/agent/timothy-post/",
+    "https://x.com/timothypost?lang=en"
+   ]
+  },
+  {
+   "handle": "GrantTucker",
+   "name": "Grant Tucker",
+   "followers": 17862,
+   "identified": true,
+   "headline": "UK entertainment journalist and broadcaster; Entertainment Editor at Daily Mail/Mail on Sunday, previously Media & Entertainment Editor at The Sunday Times and Times Diary",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 150000,
+   "sources": [
+    "https://muckrack.com/grant-tucker",
+    "https://twitter.com/granttucker",
+    "https://www.iaindale.com/articles/the-rise-of-grant-tucker"
+   ]
+  },
+  {
+   "handle": "z_shavlidze",
+   "name": "Zurab Shavlidze",
+   "followers": 1338,
+   "identified": true,
+   "headline": "Zurab Shavlidze is confirmed via XDAO's own About page as Board Member and Co-Founder & COO of XDAO (a Telegram-based DAO creation platform); the X handle @z_shavlidze is independently corroborated as",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 50000,
+   "high": 1000000,
+   "sources": [
+    "https://x.com/z_shavlidze",
+    "https://xdao.app/about"
+   ]
+  },
+  {
+   "handle": "karthikkalyan90",
+   "name": "Karthik Kalyan / Karthik Kalyanaraman",
+   "followers": 2351,
+   "identified": true,
+   "headline": "Vercel engineer (company field confirmed on GitHub), co-maintainer of vercel/workflow SDK; Langtrace AI co-founder (Scale3-Labs/langtrace confirmed pinned); Coinbase claim unverified (not found on Git",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 50000,
+   "high": 500000,
+   "sources": [
+    "https://github.com/karthikscale3",
+    "https://github.com/vercel/workflow",
+    "https://x.com/karthikkalyan90"
+   ]
+  },
+  {
+   "handle": "emax",
+   "name": "Max Van Kleek",
+   "followers": 3987,
+   "identified": true,
+   "headline": "Associate Professor of Computer Science/HCI at University of Oxford; X bio claims a16z Speedrun sr006 (early-stage cohort founder, not a proven exit)",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 100000,
+   "high": 500000,
+   "sources": [
+    "https://www.cs.ox.ac.uk/people/max.vankleek/",
+    "https://x.com/emax",
+    "https://speedrun.a16z.com/faq"
+   ]
+  },
+  {
+   "handle": "natea",
+   "name": "Nate Aune",
+   "followers": 3022,
+   "identified": true,
+   "headline": "Confirmed as Nate Aune, Medford MA-based founder of Appsembler (open-source SaaS enablement, est. 2012) and Jazkarta (Plone web consulting, est. 2004); identity corroborated across X, LinkedIn, GitHub",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 100000,
+   "high": 3000000,
+   "sources": [
+    "https://github.com/natea",
+    "https://www.linkedin.com/in/natea/",
+    "https://x.com/natea",
+    "https://appsembler.com/blog/author/natea"
+   ]
+  },
+  {
+   "handle": "vojtajina",
+   "name": "Vojta Jina",
+   "followers": 5181,
+   "identified": true,
+   "headline": "GitHub profile confirms vojtajina is Vojta Jina, creator of the Karma test runner and core AngularJS/Traceur contributor; more recently listed as co-founder at a stealth AI startup, but no funding, ex",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 200000,
+   "high": 2000000,
+   "sources": [
+    "https://github.com/vojtajina",
+    "https://www.getprog.ai/profile/46647"
+   ]
+  },
+  {
+   "handle": "amrmkayid",
+   "name": "Amr Kayid",
+   "followers": 1033,
+   "identified": true,
+   "headline": "AI research engineer; early/founding technical team member at Cohere (joined ~2019-2021 via FORai group), now listed as Principal Research Engineer; identity corroborated by GitHub, personal site, and",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 100000,
+   "high": 2000000,
+   "sources": [
+    "https://github.com/amrmkayid",
+    "https://kayid.ca/",
+    "https://ca.linkedin.com/in/amrmkayid"
+   ]
+  },
+  {
+   "handle": "AndyLeonard",
+   "name": "Andy Leonard",
+   "followers": 5777,
+   "identified": true,
+   "headline": "Founder and Chief Data Engineer at Enterprise Data & Analytics (EDNA); Fabric/ADF/SSIS data engineering consultant, trainer",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 50000,
+   "high": 1000000,
+   "sources": [
+    "https://andyleonard.blog/",
+    "https://andyleonard.blog/andy/"
+   ]
+  },
+  {
+   "handle": "robertrichman",
+   "name": "Robert Richman",
+   "followers": 14260,
+   "identified": true,
+   "headline": "Corporate culture speaker/consultant; former Zappos Culture Strategist, co-creator of Zappos Insights, author of The Culture Blueprint",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 100000,
+   "high": 1500000,
+   "sources": [
+    "https://robertrichman.com/",
+    "https://robertrichman.com/about/"
+   ]
+  },
+  {
+   "handle": "MsMelChen",
+   "name": "Melissa Chen",
+   "followers": 332860,
+   "identified": true,
+   "headline": "Singapore-born journalist/commentator, Spectator contributing editor, Ideas Beyond Borders co-founder/managing director",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 0,
+   "high": 500000,
+   "sources": [
+    "https://x.com/MsMelChen",
+    "https://en.wikipedia.org/wiki/Melissa_Chen"
+   ]
+  },
+  {
+   "handle": "AlanShiflett",
+   "name": "Alan Shiflett",
+   "followers": 1118,
+   "identified": true,
+   "headline": "Alan Shiflett is GM of Domain Aftermarket at GoDaddy (oversees Afternic), 15+ year GoDaddy veteran and ICA board member; identity corroborated by independent third-party (domain-industry journalist El",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 200000,
+   "high": 1500000,
+   "sources": [
+    "https://x.com/DInvesting/status/2067603691696177330",
+    "https://www.linkedin.com/in/ashiflett/",
+    "https://www.internetcommerce.org/blog/welcoming-alan-shiflett-to-the-ica-board-of-directors/"
+   ]
+  },
+  {
+   "handle": "ereckers",
+   "name": "Ed Reckers",
+   "followers": 1080,
+   "identified": true,
+   "headline": "Founder and lead WordPress developer/consultant at Red Bridge Internet, a small San Francisco WordPress development agency",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 50000,
+   "high": 500000,
+   "sources": [
+    "https://github.com/ereckers",
+    "https://profiles.wordpress.org/ereckers/",
+    "https://x.com/ereckers",
+    "https://www.redbridgenet.com/author/ereckers/"
    ]
   }
  ]

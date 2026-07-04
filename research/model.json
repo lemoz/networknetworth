@@ -2,9 +2,9 @@
  "note": "v1.4 \u2014 measured post-verification rates: b0=8.1% (6/74 random organic sub-1k, scaled per board by audience quality q vs anchor 0.284, clamp [0.002, 0.081]); b1=9.0% (36/401); b2=23.3% (20/86); b3=60% assumed. Bucket means winsorized at $10M. total = floor + remainder x share x rate x mean.",
  "bucketMeans": {
   "b0": 406146.01769911504,
-  "b1": 1047461.3486842106,
-  "b2": 1893028.735632184,
-  "b3": 1093029.4117647058
+  "b1": 980057.6388888889,
+  "b2": 1715545.918367347,
+  "b3": 1046194.4444444445
  },
  "identRates": {
   "b0": 0.08108108108108109,

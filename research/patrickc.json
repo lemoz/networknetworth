@@ -3,8 +3,8 @@
   "account": "patrickc",
   "name": "@patrickc",
   "totalFollowers": 1242793,
-  "researched": 213,
-  "identified": 213,
+  "researched": 228,
+  "identified": 228,
   "note": "Board seeded from the cross-account researched pool: every entry verified as a follower via the X follow-relationship API. Evidence-based ranges with adversarial verification.",
   "sampleDist": {
    "sampled": 2000,
@@ -26,10 +26,10 @@
    ]
   },
   "estimate": {
-   "total": 1395434337.3451328,
-   "low": 697717168.6725664,
-   "high": 2790868674.6902657,
-   "floor": 386096500.0
+   "total": 1403697152.9646018,
+   "low": 701848576.4823009,
+   "high": 2807394305.9292035,
+   "floor": 394371500.0
   }
  },
  "people": [
@@ -3255,6 +3255,242 @@
    "sources": [
     "https://x.com/robbatech_id",
     "https://x.com/robbanin_id"
+   ]
+  },
+  {
+   "handle": "BanjiAlo",
+   "name": "Banji Alo",
+   "followers": 14653,
+   "identified": true,
+   "headline": "Banji Alo is a data career coach, career advisor, and author (banjialo.com), selling a data-analyst career course, coaching/consultations, and books via Gumroad/Thinkific.",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 10000,
+   "high": 150000,
+   "sources": [
+    "https://banjialo.com/",
+    "https://au.linkedin.com/in/banjialo",
+    "https://linktr.ee/banjialo"
+   ]
+  },
+  {
+   "handle": "fyrejason",
+   "name": "Jason Turnquist",
+   "followers": 1000,
+   "identified": true,
+   "headline": "Jason Turnquist is co-founder/CEO of Fyresite, a Phoenix-based Shopify/eCommerce web and app development agency, and co-founder of ProPlaintiff.ai, a small legaltech SaaS startup (won a regional Arizo",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 100000,
+   "high": 1000000,
+   "sources": [
+    "https://www.linkedin.com/in/jason-turnquist/",
+    "https://www.fyresite.com/case-studies/proplaintiff-ai/",
+    "https://attorneyatlawmagazine.com/stories/vendor-interview/proplaintiff-ai"
+   ]
+  },
+  {
+   "handle": "jchatelaine",
+   "name": "Jeremy Chatelaine",
+   "followers": 1305,
+   "identified": true,
+   "headline": "Founder/CEO of QuickMail and MonsterOps; long-time software engineer, cold-email author, and podcast co-host.",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 800000,
+   "high": 5000000,
+   "sources": [
+    "https://quickmail.com/authors/jeremy-chatelaine",
+    "https://monsterops.io/en/about",
+    "https://getlatka.com/companies/quickmail.com",
+    "https://www.crunchbase.com/person/jeremy-chatelaine"
+   ]
+  },
+  {
+   "handle": "burakborhan",
+   "name": "Burak Borhan",
+   "followers": 1010,
+   "identified": true,
+   "headline": "Red Hat Regional Director covering Saudi Arabia/North Gulf/Levant (MEA ecosystems); LinkedIn corroborates the role, but no independent wealth signals (no equity, ownership, or exit history) were found",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 150000,
+   "high": 600000,
+   "sources": [
+    "https://x.com/burakborhan (unverified this pass - fetch blocked)",
+    "https://www.linkedin.com/posts/burakborhan_redhatsummit-teamwork-innovation-activity-7129531540933345280-H4l8",
+    "https://www.redhat.com/ (generic corporate homepage, not a specific bio confirmation)"
+   ]
+  },
+  {
+   "handle": "GrantTucker",
+   "name": "Grant Tucker",
+   "followers": 17862,
+   "identified": true,
+   "headline": "UK entertainment journalist and broadcaster; Entertainment Editor at Daily Mail/Mail on Sunday, previously Media & Entertainment Editor at The Sunday Times and Times Diary",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 150000,
+   "sources": [
+    "https://muckrack.com/grant-tucker",
+    "https://twitter.com/granttucker",
+    "https://www.iaindale.com/articles/the-rise-of-grant-tucker"
+   ]
+  },
+  {
+   "handle": "karthikkalyan90",
+   "name": "Karthik Kalyan / Karthik Kalyanaraman",
+   "followers": 2351,
+   "identified": true,
+   "headline": "Vercel engineer (company field confirmed on GitHub), co-maintainer of vercel/workflow SDK; Langtrace AI co-founder (Scale3-Labs/langtrace confirmed pinned); Coinbase claim unverified (not found on Git",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 50000,
+   "high": 500000,
+   "sources": [
+    "https://github.com/karthikscale3",
+    "https://github.com/vercel/workflow",
+    "https://x.com/karthikkalyan90"
+   ]
+  },
+  {
+   "handle": "emax",
+   "name": "Max Van Kleek",
+   "followers": 3987,
+   "identified": true,
+   "headline": "Associate Professor of Computer Science/HCI at University of Oxford; X bio claims a16z Speedrun sr006 (early-stage cohort founder, not a proven exit)",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 100000,
+   "high": 500000,
+   "sources": [
+    "https://www.cs.ox.ac.uk/people/max.vankleek/",
+    "https://x.com/emax",
+    "https://speedrun.a16z.com/faq"
+   ]
+  },
+  {
+   "handle": "natea",
+   "name": "Nate Aune",
+   "followers": 3022,
+   "identified": true,
+   "headline": "Confirmed as Nate Aune, Medford MA-based founder of Appsembler (open-source SaaS enablement, est. 2012) and Jazkarta (Plone web consulting, est. 2004); identity corroborated across X, LinkedIn, GitHub",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 100000,
+   "high": 3000000,
+   "sources": [
+    "https://github.com/natea",
+    "https://www.linkedin.com/in/natea/",
+    "https://x.com/natea",
+    "https://appsembler.com/blog/author/natea"
+   ]
+  },
+  {
+   "handle": "vojtajina",
+   "name": "Vojta Jina",
+   "followers": 5181,
+   "identified": true,
+   "headline": "GitHub profile confirms vojtajina is Vojta Jina, creator of the Karma test runner and core AngularJS/Traceur contributor; more recently listed as co-founder at a stealth AI startup, but no funding, ex",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 200000,
+   "high": 2000000,
+   "sources": [
+    "https://github.com/vojtajina",
+    "https://www.getprog.ai/profile/46647"
+   ]
+  },
+  {
+   "handle": "kpatt1011",
+   "name": "Keith Pattison",
+   "followers": 1830,
+   "identified": true,
+   "headline": "Chief Technologist / founder at Black Flag Design, a Denver-based software studio (per LinkedIn/X bio); small project-based studio charging $20K-$44K+ per engagement, not evidence of personal net wort",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 300000,
+   "sources": [
+    "https://x.com/kpatt1011",
+    "https://www.linkedin.com/in/kpatt1011/",
+    "https://www.blackflag.design/",
+    "https://github.com/kpatt1011"
+   ]
+  },
+  {
+   "handle": "iMichaelTen",
+   "name": "Michael Ten",
+   "followers": 6757,
+   "identified": true,
+   "headline": "Identified as Michael Ten, a U.S.-based author, artist, and futurist who writes about life extension, psychiatric ethics (Szaszian), and basic income; self-published author of longevity-focused books,",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 50000,
+   "sources": [
+    "https://michaelten.com/ (confirms identity, bio, and links to @iMichaelTen; also shows Patreon donation ask, no net-worth/income data)"
+   ]
+  },
+  {
+   "handle": "MsMelChen",
+   "name": "Melissa Chen",
+   "followers": 332860,
+   "identified": true,
+   "headline": "Singapore-born journalist/commentator, Spectator contributing editor, Ideas Beyond Borders co-founder/managing director",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 0,
+   "high": 500000,
+   "sources": [
+    "https://x.com/MsMelChen",
+    "https://en.wikipedia.org/wiki/Melissa_Chen"
+   ]
+  },
+  {
+   "handle": "sergeiklimov",
+   "name": "Sergei Klimov",
+   "followers": 3269,
+   "identified": true,
+   "headline": "Confirmed as Sergei Klimov, General Manager/co-founder of Charlie Oscar (indie studio behind Gremlins, Inc. and Spire of Sorcery), also program director for Games Industry Law Summit; based in Vilnius",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 10000,
+   "high": 300000,
+   "sources": [
+    "https://bsky.app/profile/sergeiklimov.bsky.social",
+    "https://en.wikipedia.org/wiki/Gremlins%2C_Inc.",
+    "https://wnhub.io/news/indie/item-19237"
+   ]
+  },
+  {
+   "handle": "dylan_works_",
+   "name": "Dylan Zhang",
+   "followers": 1519,
+   "identified": true,
+   "headline": "UIUC CS PhD student (ALTA lab, advised by Hao Peng) in language-model post-training; publishes as Shizhuo Dylan Zhang; Google Student Researcher",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 0,
+   "high": 30000,
+   "sources": [
+    "https://dylanzsz.github.io/ (confirms identity: Dylan Zhang, UIUC PhD student, links to @dylan_works_ \u2014 but contains no financial/net-worth information)"
+   ]
+  },
+  {
+   "handle": "nic_amadio",
+   "name": "Nicola Amadio",
+   "followers": 2538,
+   "identified": true,
+   "headline": "Nicola Amadio is a European software engineer (Oracle, ex-Amazon/Samsung) turned tech-career content/coaching operator, founder of Euro Top Tech",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 150000,
+   "high": 800000,
+   "sources": [
+    "https://x.com/nic_amadio",
+    "https://www.linkedin.com/posts/nicola-amadio_my-salary-journey-as-a-software-engineer-activity-7327577144983711744-meq-"
    ]
   }
  ]

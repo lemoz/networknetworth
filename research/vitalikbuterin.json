@@ -3,8 +3,8 @@
   "account": "VitalikButerin",
   "name": "@VitalikButerin",
   "totalFollowers": 6673306,
-  "researched": 183,
-  "identified": 177,
+  "researched": 194,
+  "identified": 188,
   "note": "Evidence-based ranges from live web research with adversarial verification. Cross-board entries confirmed as followers via the X follow-relationship API. Most are low-confidence; net worth is rarely public.",
   "owner": {
    "name": "Vitalik Buterin",
@@ -28,10 +28,10 @@
    "b3": 0
   },
   "estimate": {
-   "total": 6403066164.132744,
-   "low": 3201533082.066372,
-   "high": 12806132328.265488,
-   "floor": 982541500.0
+   "total": 6413607228.920354,
+   "low": 3206803614.460177,
+   "high": 12827214457.840708,
+   "floor": 993091500.0
   }
  },
  "people": [
@@ -2776,6 +2776,179 @@
     "https://www.founderscoop.com/author/aviel/",
     "https://www.geekwire.com/2024/inside-the-new-serendipity-factory-trying-to-spark-the-startup-scene-in-seattle/",
     "https://www.geekwire.com/2017/sprout-social-acquires-seattle-social-media-analytics-startup-simply-measured/"
+   ]
+  },
+  {
+   "handle": "fyrejason",
+   "name": "Jason Turnquist",
+   "followers": 1000,
+   "identified": true,
+   "headline": "Jason Turnquist is co-founder/CEO of Fyresite, a Phoenix-based Shopify/eCommerce web and app development agency, and co-founder of ProPlaintiff.ai, a small legaltech SaaS startup (won a regional Arizo",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 100000,
+   "high": 1000000,
+   "sources": [
+    "https://www.linkedin.com/in/jason-turnquist/",
+    "https://www.fyresite.com/case-studies/proplaintiff-ai/",
+    "https://attorneyatlawmagazine.com/stories/vendor-interview/proplaintiff-ai"
+   ]
+  },
+  {
+   "handle": "jchatelaine",
+   "name": "Jeremy Chatelaine",
+   "followers": 1305,
+   "identified": true,
+   "headline": "Founder/CEO of QuickMail and MonsterOps; long-time software engineer, cold-email author, and podcast co-host.",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 800000,
+   "high": 5000000,
+   "sources": [
+    "https://quickmail.com/authors/jeremy-chatelaine",
+    "https://monsterops.io/en/about",
+    "https://getlatka.com/companies/quickmail.com",
+    "https://www.crunchbase.com/person/jeremy-chatelaine"
+   ]
+  },
+  {
+   "handle": "PKoellinger",
+   "name": "Philipp Koellinger",
+   "followers": 1983,
+   "identified": true,
+   "headline": "Prof. Dr. Philipp Koellinger, Co-Founder & CEO of DeSci Labs, professor at VU Amsterdam, published in genoeconomics",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 100000,
+   "high": 2000000,
+   "sources": [
+    "https://x.com/pkoellinger",
+    "https://research.vu.nl/en/persons/philipp-koellinger/",
+    "https://www.crunchbase.com/organization/desci-labs"
+   ]
+  },
+  {
+   "handle": "herelle_jean",
+   "name": "Jean Herelle",
+   "followers": 2016,
+   "identified": true,
+   "headline": "Jean Herelle, Co-Founder &amp; COO of CrunchDAO (Web3/Solana collective-intelligence data-science platform); identity confirmed via Solana Incubator's own tweets tagging @herelle_jean as CrunchDAO's f",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 100000,
+   "high": 5000000,
+   "sources": [
+    "https://x.com/herelle_jean",
+    "https://x.com/incubator/status/1909622674629722486",
+    "https://theorg.com/org/crunch-dao/org-chart/jean-herelle",
+    "https://www.linkedin.com/in/jean-herelle/"
+   ]
+  },
+  {
+   "handle": "timothypost",
+   "name": "Timothy Post",
+   "followers": 2382,
+   "identified": true,
+   "headline": "Timothy Post is a LandVest/Christie's luxury real estate agent based in Dorset/Manchester, serving Southern Vermont; moved to Dorset full-time in 2022, prior career background unverified.",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 200000,
+   "high": 1500000,
+   "sources": [
+    "https://landvest.com/realestate/agent/timothy-post/",
+    "https://x.com/timothypost?lang=en"
+   ]
+  },
+  {
+   "handle": "z_shavlidze",
+   "name": "Zurab Shavlidze",
+   "followers": 1338,
+   "identified": true,
+   "headline": "Zurab Shavlidze is confirmed via XDAO's own About page as Board Member and Co-Founder & COO of XDAO (a Telegram-based DAO creation platform); the X handle @z_shavlidze is independently corroborated as",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 50000,
+   "high": 1000000,
+   "sources": [
+    "https://x.com/z_shavlidze",
+    "https://xdao.app/about"
+   ]
+  },
+  {
+   "handle": "karthikkalyan90",
+   "name": "Karthik Kalyan / Karthik Kalyanaraman",
+   "followers": 2351,
+   "identified": true,
+   "headline": "Vercel engineer (company field confirmed on GitHub), co-maintainer of vercel/workflow SDK; Langtrace AI co-founder (Scale3-Labs/langtrace confirmed pinned); Coinbase claim unverified (not found on Git",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 50000,
+   "high": 500000,
+   "sources": [
+    "https://github.com/karthikscale3",
+    "https://github.com/vercel/workflow",
+    "https://x.com/karthikkalyan90"
+   ]
+  },
+  {
+   "handle": "emax",
+   "name": "Max Van Kleek",
+   "followers": 3987,
+   "identified": true,
+   "headline": "Associate Professor of Computer Science/HCI at University of Oxford; X bio claims a16z Speedrun sr006 (early-stage cohort founder, not a proven exit)",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 100000,
+   "high": 500000,
+   "sources": [
+    "https://www.cs.ox.ac.uk/people/max.vankleek/",
+    "https://x.com/emax",
+    "https://speedrun.a16z.com/faq"
+   ]
+  },
+  {
+   "handle": "amrmkayid",
+   "name": "Amr Kayid",
+   "followers": 1033,
+   "identified": true,
+   "headline": "AI research engineer; early/founding technical team member at Cohere (joined ~2019-2021 via FORai group), now listed as Principal Research Engineer; identity corroborated by GitHub, personal site, and",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 100000,
+   "high": 2000000,
+   "sources": [
+    "https://github.com/amrmkayid",
+    "https://kayid.ca/",
+    "https://ca.linkedin.com/in/amrmkayid"
+   ]
+  },
+  {
+   "handle": "iMichaelTen",
+   "name": "Michael Ten",
+   "followers": 6757,
+   "identified": true,
+   "headline": "Identified as Michael Ten, a U.S.-based author, artist, and futurist who writes about life extension, psychiatric ethics (Szaszian), and basic income; self-published author of longevity-focused books,",
+   "verdict": "unfounded",
+   "confidence": "low",
+   "low": 0,
+   "high": 50000,
+   "sources": [
+    "https://michaelten.com/ (confirms identity, bio, and links to @iMichaelTen; also shows Patreon donation ask, no net-worth/income data)"
+   ]
+  },
+  {
+   "handle": "nic_amadio",
+   "name": "Nicola Amadio",
+   "followers": 2538,
+   "identified": true,
+   "headline": "Nicola Amadio is a European software engineer (Oracle, ex-Amazon/Samsung) turned tech-career content/coaching operator, founder of Euro Top Tech",
+   "verdict": "overstated",
+   "confidence": "low",
+   "low": 150000,
+   "high": 800000,
+   "sources": [
+    "https://x.com/nic_amadio",
+    "https://www.linkedin.com/posts/nicola-amadio_my-salary-journey-as-a-software-engineer-activity-7327577144983711744-meq-"
    ]
   }
  ]
