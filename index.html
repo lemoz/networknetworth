@@ -589,6 +589,18 @@ $("global").addEventListener("click",e=>{const tr=e.target.closest("tr[data-h]")
 renderGlobal("");
 loadDossiers();
 loadModel();
+
+/* stale-tab guard: if the site was redeployed while this tab was open,
+   reload on next return to the tab so old JS never serves fake flows */
+let SITE_V=null;
+function checkVersion(){
+  fetch("/api/version").then(r=>r.json()).then(j=>{
+    if(SITE_V===null){SITE_V=j.v;return;}
+    if(j.v!==SITE_V) location.reload();
+  }).catch(()=>{});
+}
+checkVersion();
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")checkVersion();});
 </script>
 </body>
 </html>

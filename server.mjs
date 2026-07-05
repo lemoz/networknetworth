@@ -136,6 +136,13 @@ async function lookup(handle, max) {
 const server = createServer(async (req, res) => {
   const u = new URL(req.url, 'http://localhost');
 
+  if (u.pathname === '/api/version') {
+    try {
+      const { statSync } = await import('node:fs');
+      return send(res, 200, JSON.stringify({ v: String(statSync(join(__dirname, 'index.html')).mtimeMs) }));
+    } catch { return send(res, 200, JSON.stringify({ v: '0' })); }
+  }
+
   if (u.pathname === '/api/lookup') {
     if (!KEY) return send(res, 200, JSON.stringify({ ok: false, error: 'no_api_key', message: 'No TWITTERAPI_KEY found. Add it to .env and restart.' }));
     const handle = (u.searchParams.get('handle') || '').replace(/[^A-Za-z0-9_]/g, '').slice(0, 15).toLowerCase();
