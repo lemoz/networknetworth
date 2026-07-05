@@ -89,9 +89,19 @@ async function tw(path, params, retries = 3) {
   }
 }
 
+// set when twitterapi.io reports credit exhaustion, so we stop spawning doomed
+// builds/lookups and show an honest "queued" message instead of a false error.
+let twitterCreditsOutUntil = 0;
+function creditsExhausted(body) { return !!(body && body.message && /credit/i.test(body.message)); }
+
 async function lookup(handle, max) {
   // 1) profile (for real display name + true total follower count)
   const info = await tw('/twitter/user/info', { userName: handle });
+  // HTTP 402 (or a "credits" message) = out of credits, NOT a missing account.
+  if (info.httpStatus === 402 || creditsExhausted(info.body)) {
+    twitterCreditsOutUntil = Date.now() + 10 * 60_000;
+    return { ok: false, error: 'no_credits', message: 'Live data is temporarily unavailable (upstream credits).' };
+  }
   if (info.httpStatus === 401 || info.httpStatus === 403)
     return { ok: false, error: 'bad_key', message: 'twitterapi.io rejected the API key (HTTP ' + info.httpStatus + ').' };
   if (info.httpStatus === 429)
@@ -317,7 +327,7 @@ const server = createServer(async (req, res) => {
       return send(res, 200, JSON.stringify(cur));
     // new request: only start a build if the whole pipeline can actually run
     const { glmAvailable } = await import('./glm.mjs');
-    if (!KEY || !glmAvailable()) {
+    if (!KEY || !glmAvailable() || Date.now() < twitterCreditsOutUntil) {
       logLookup({ handle, boardRequest: 'queued_offline' });
       return send(res, 200, JSON.stringify({ status: 'offline', avgMs: avgBuildMs() }));
     }

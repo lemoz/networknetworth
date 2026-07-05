@@ -625,11 +625,13 @@ async function runReal(handle){
       const m={no_api_key:"The live model isn't available right now (no API key on the server). Showing the toy model instead.",
         bad_key:"The live model isn't available right now (upstream key rejected). Showing the toy model instead.",
         not_found:"Couldn't load @"+handle+" from X (typo, or a protected/suspended account?).",
+        no_credits:"Live data is temporarily unavailable (upstream credits). @"+handle+" is in our research queue — check back soon.",
         rate_limited:"Live lookups are rate-limited and the budget is briefly exhausted — showing the toy model. Try again in a few minutes for the real estimate.",
         daily_cap:"Today's live-lookup budget is used up — showing the toy model. Researched boards still work; fresh lookups resume tomorrow (UTC).",
         bad_handle:"That handle didn't parse."}[j.error]||j.message||"Lookup failed.";
       showError(m);
-      if(j.error!=="not_found"&&j.error!=="bad_handle") paint(syntheticD(handle));
+      // never invent numbers for real-but-unavailable accounts
+      if(j.error!=="not_found"&&j.error!=="bad_handle"&&j.error!=="no_credits") paint(syntheticD(handle));
       return;
     }
     paint(realD(handle,j));
