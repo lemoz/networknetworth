@@ -51,20 +51,32 @@ async function glmJSON(system, user, { maxTokens = 4000, timeoutMs = 180_000 } =
 
 const UNITS_RULE = 'All dollar amounts must be RAW US DOLLARS as JSON numbers: $2 billion = 2000000000, $50 million = 50000000. Never output 2 or 50 to mean billions/millions. If there is no credible public basis for an estimate, say found=false — never invent a number.';
 
-// Research the board owner's own net worth.
+// Research the board owner's own net worth, GROUNDED on their real X profile
+// (self-reported location, bio, external link). profile: {userName, name,
+// followers, description, location, link}. `link` should already be resolved
+// (t.co -> real destination) by the caller.
 export async function researchOwner(profile) {
+  const loc = (profile.location || '').trim();
+  const link = (profile.link || '').trim();
   const j = await glmJSON(
-    'You are a careful wealth researcher. Use web search when available. Prefer Forbes/Bloomberg, documented equity stakes, funding rounds, exits, filings. ' + UNITS_RULE + ' Respond with JSON only: {"found":bool,"name":str,"headline":str,"low":number,"high":number,"confidence":"low"|"medium"|"high","sources":[urls]}',
-    `Estimate the personal net worth of the X/Twitter user @${profile.userName} ("${profile.name}", ${profile.followers.toLocaleString()} followers). Bio: "${profile.description || 'n/a'}"`
+    'You are a careful wealth researcher. You are given a real X/Twitter profile. Identify who the person is (role, company, wealth basis) and estimate their personal net worth from what is publicly known about them. ' + UNITS_RULE +
+    ' Do NOT invent a location, employer, or URL — only use what is given or what you actually know. Respond with JSON only: {"found":bool,"name":str,"role":str,"headline":str,"basis":str,"low":number,"high":number,"confidence":"low"|"medium"|"high"}. "role" = job title + company (from the bio/link if unclear). "basis" = one sentence on WHY this net-worth range (equity, exits, salary, or "no strong public basis").',
+    `Real X profile:\n- Handle: @${profile.userName}\n- Name: ${profile.name}\n- Followers: ${(profile.followers || 0).toLocaleString()}\n- Bio: "${profile.description || 'n/a'}"\n- Self-reported location: ${loc || 'n/a'}\n- Linked site: ${link || 'n/a'}\n\nWho are they, and what is a defensible personal net worth range?`
   );
   if (!j || j.found === false || !(j.low > 0 || j.high > 0)) return null;
+  // sources are REAL only: the person's X profile + their own linked site. We
+  // never surface GLM-claimed citation URLs (it fabricates them without search).
+  const sources = ['https://x.com/' + profile.userName];
+  if (/^https?:\/\//i.test(link)) sources.push(link);
   return {
-    name: j.name || profile.name, headline: String(j.headline || '').slice(0, 200),
+    name: j.name || profile.name,
+    role: String(j.role || '').slice(0, 120),
+    headline: String(j.headline || '').slice(0, 200),
+    basis: String(j.basis || '').slice(0, 200),
+    location: loc,                                   // echo REAL location, never GLM's
     verdict: 'ai-researched', confidence: j.confidence === 'high' ? 'medium' : 'low', // cap: unverified
     low: Math.round(j.low), high: Math.round(j.high),
-    // GLM hallucinates citation URLs when live web search isn't firing; showing
-    // fake links is worse than none. Drop them until real search is wired up.
-    sources: [],
+    sources,
   };
 }
 

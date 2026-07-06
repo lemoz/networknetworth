@@ -104,6 +104,7 @@
   .gl tbody tr:hover{background:rgba(255,255,255,.045)}
   .ownworth{display:none;margin-top:5px;font-size:13px;color:var(--gold);font-weight:600}
   .ownworth .srclink{margin-left:2px}
+  .ownworth .ownmeta{color:var(--mut);font-weight:400;font-size:12px}
   .sharebtn{margin-top:14px;font-size:13px;padding:9px 16px}
   .populating{margin-top:18px}
   .pop-row{display:flex;gap:16px;align-items:flex-start}
@@ -575,8 +576,14 @@ function researchD(handle,data){
   const sumMid=ppl.reduce((s,x)=>s+x.nw,0);
   const top=ppl.length?ppl[0].nw:0;
   const o=M.owner;
-  const ownLine=o?('💰 Own estimated worth: '+rangeText(o.low,o.high)+' · '+esc(o.verdict)
-    +((o.sources&&o.sources[0])?(' <a class="srclink" href="'+esc(o.sources[0])+'" target="_blank" rel="noopener">🔗</a>'):'')):'';
+  let ownLine='';
+  if(o){
+    const src=(o.sources||[]).map((u,i)=>'<a class="srclink" href="'+esc(u)+'" target="_blank" rel="noopener">'+(i===0?'𝕏':'🔗')+'</a>').join(' ');
+    const meta=[o.role&&esc(o.role),o.location&&('📍'+esc(o.location))].filter(Boolean).join(' · ');
+    ownLine='💰 Own estimated worth: '+rangeText(o.low,o.high)+' · '+esc(o.verdict)+' '+src
+      +(meta?('<br/><span class="ownmeta">'+meta+'</span>'):'')
+      +(o.basis?('<br/><span class="ownmeta">'+esc(o.basis)+'</span>'):'');
+  }
   const est=M.estimate;
   const modeled=est&&est.total>sumMid*1.2; // only headline the model when it adds real signal
   return {handle:M.account||handle,

@@ -120,6 +120,9 @@ async function lookup(handle, max) {
     followers: data.followers || 0,
     isBlueVerified: !!data.isBlueVerified,
     description: data.description || '',
+    // real self-reported fields used to GROUND owner net-worth research
+    location: data.location || '',
+    link: (data.url || (data.entities && data.entities.url && data.entities.url.urls && data.entities.url.urls[0] && data.entities.url.urls[0].expanded_url) || ''),
   };
 
   // 2) followers (cursor-paginated, 100/page — pageSize 200 is rejected upstream)
@@ -223,6 +226,20 @@ function avgBuildMs() {
 function hasStaticBoard(h) { return existsSync(join(__dirname, 'research', h + '.json')); }
 function hasDynamicBoard(h) { return existsSync(join(BOARDS_DIR, h + '.json')); }
 
+// resolve an X t.co short link to its real destination (grounding signal for
+// owner research). Best-effort, short timeout; returns the input on any failure.
+async function resolveLink(url) {
+  if (!url || !/^https?:\/\//i.test(url)) return url || '';
+  if (!/\bt\.co\//i.test(url)) return url; // already a real URL
+  try {
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 6000);
+    const r = await fetch(url, { method: 'HEAD', redirect: 'follow', signal: ctrl.signal });
+    clearTimeout(timer);
+    return r.url || url;
+  } catch { return url; }
+}
+
 function modelEstimate(meta, floor) {
   try {
     const MODEL = JSON.parse(readFileSync(MODEL_PATH, 'utf8'));
@@ -268,8 +285,10 @@ async function buildBoard(handle) {
     low: p.low, high: p.high, sources: p.sources || [],
   }));
 
-  // GLM: owner net worth + any big NET-NEW sampled followers the sweep missed
-  const owner = await glm.researchOwner(result.profile).catch(() => null);
+  // GLM: owner net worth (grounded on the real profile + resolved link) + any
+  // big NET-NEW sampled followers the sweep missed
+  const link = await resolveLink(result.profile.link).catch(() => result.profile.link);
+  const owner = await glm.researchOwner({ ...result.profile, link }).catch(() => null);
   const known = new Set(members.map((m) => m.handle.toLowerCase()));
   const bigNew = sample.filter((f) => (f.followers || 0) >= 1e5 && !known.has((f.userName || '').toLowerCase())).slice(0, 8);
   const glmPeople = (await Promise.all(bigNew.map((f) => glm.researchPerson(f).catch(() => null)))).filter(Boolean);
