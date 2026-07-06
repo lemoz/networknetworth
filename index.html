@@ -587,7 +587,7 @@ function researchD(handle,data){
       ?("modeled: "+money(sumMid)+" researched floor + "+compact(M.totalFollowers||0)+" followers × measured wealth rates · ±2x")
       :"Σ midpoints of researched ranges · evidence-based, mostly low-confidence",
     handleLine:M.dynamic
-      ?("🤖 AI-built board ("+esc(M.engine||"GLM")+") · "+(M.identified||0)+" of "+(M.researched||ppl.length)+" biggest sampled followers identified · unverified")
+      ?("🤖 AI-built board ("+esc(M.engine||"GLM")+") · "+(M.identified||0)+" researched followers matched · unverified")
       :("🔬 deep-researched dossier · "+(M.identified||0)+" of "+(M.researched||ppl.length)+" identifiable"),
     verified:!M.dynamic,followers:M.totalFollowers||0,
     avg:ppl.length?sumMid/ppl.length:0,whalesAll:0,
@@ -595,7 +595,7 @@ function researchD(handle,data){
     stats:[{k:"Followers (real)",v:compact(M.totalFollowers||0)},{k:"Researched",v:String(M.researched||ppl.length)},
       {k:"Identified",v:String(M.identified||0)},{k:"Richest follower (mid)",v:money(top)}],
     hint:M.dynamic
-      ?"🤖 Auto-built board — a GLM 5.2 research agent sampled real followers and researched the biggest ones just now. Real sources, but NO verification pass yet — curated boards get one. Opinions, not facts."
+      ?"🤖 Auto-built board — we swept our pool of already-researched wealthy people to find which of them follow this account (their worth was verified on curated boards), and a GLM agent estimated the owner. The owner + AI-added names have NO verification pass yet — curated boards get one. Opinions, not facts."
       :"🔬 Researched dossier — AI agents identified these followers from public sources and estimated ranges, with a verification pass on every entry. Modeled totals extrapolate from measured wealth rates; ±2x error bars. Opinions, not facts."};
 }
 async function runResearch(handle){
