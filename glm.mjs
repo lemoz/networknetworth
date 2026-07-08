@@ -51,6 +51,29 @@ async function glmJSON(system, user, { maxTokens = 4000, timeoutMs = 180_000 } =
 
 const UNITS_RULE = 'All dollar amounts must be RAW US DOLLARS as JSON numbers: $2 billion = 2000000000, $50 million = 50000000. Never output 2 or 50 to mean billions/millions. If there is no credible public basis for an estimate, say found=false — never invent a number.';
 
+// --- real web search (Google Custom Search JSON API) -------------------------
+// This is what makes estimates CITED rather than guessed: we search, feed the
+// real result snippets to GLM, and the sources shown are the REAL result URLs.
+const GS_KEY = process.env.GOOGLE_SEARCH_KEY;
+const GS_CX = process.env.GOOGLE_CSE_ID;
+export function searchAvailable() { return !!(GS_KEY && GS_CX); }
+export async function searchWeb(query, num = 6) {
+  if (!searchAvailable()) return [];
+  const url = new URL('https://www.googleapis.com/customsearch/v1');
+  url.searchParams.set('key', GS_KEY);
+  url.searchParams.set('cx', GS_CX);
+  url.searchParams.set('q', query);
+  url.searchParams.set('num', String(Math.min(Math.max(num, 1), 10)));
+  try {
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 8000);
+    const r = await fetch(url, { signal: ctrl.signal });
+    clearTimeout(timer);
+    const j = await r.json();
+    return (j.items || []).map((it) => ({ title: it.title, link: it.link, snippet: (it.snippet || '').replace(/\s+/g, ' ').slice(0, 300) }));
+  } catch { return []; }
+}
+
 // Research the board owner's own net worth, GROUNDED on their real X profile
 // (self-reported location, bio, external link). profile: {userName, name,
 // followers, description, location, link}. `link` should already be resolved
@@ -58,23 +81,32 @@ const UNITS_RULE = 'All dollar amounts must be RAW US DOLLARS as JSON numbers: $
 export async function researchOwner(profile) {
   const loc = (profile.location || '').trim();
   const link = (profile.link || '').trim();
+  // real web search first (if configured) — this is the grounding
+  const hits = await searchWeb(`${profile.name} (@${profile.userName}) net worth`, 6).catch(() => []);
+  const grounded = hits.length > 0;
+  const searchBlock = grounded
+    ? '\n\nWeb search results (use these as your PRIMARY evidence; cite the ones you rely on by their [n] index in used_sources):\n' +
+      hits.map((h, i) => `[${i + 1}] ${h.title}\n${h.snippet}\n${h.link}`).join('\n\n')
+    : '';
   const j = await glmJSON(
-    'You are a careful wealth researcher. You are given a real X/Twitter profile. Identify who the person is (role, company, wealth basis) and estimate their personal net worth from what is publicly known about them. ' + UNITS_RULE +
-    ' Do NOT invent a location, employer, or URL — only use what is given or what you actually know. Respond with JSON only: {"found":bool,"name":str,"role":str,"headline":str,"basis":str,"low":number,"high":number,"confidence":"low"|"medium"|"high"}. "role" = job title + company (from the bio/link if unclear). "basis" = one sentence on WHY this net-worth range (equity, exits, salary, or "no strong public basis").',
-    `Real X profile:\n- Handle: @${profile.userName}\n- Name: ${profile.name}\n- Followers: ${(profile.followers || 0).toLocaleString()}\n- Bio: "${profile.description || 'n/a'}"\n- Self-reported location: ${loc || 'n/a'}\n- Linked site: ${link || 'n/a'}\n\nWho are they, and what is a defensible personal net worth range?`
+    'You are a careful wealth researcher. You are given a real X/Twitter profile' + (grounded ? ' AND live web search results' : '') + '. Identify who the person is (role, company, wealth basis) and estimate their personal net worth. ' + UNITS_RULE +
+    ' Do NOT invent a location, employer, or URL — only use what is given' + (grounded ? ', the search results,' : '') + ' or what you actually know. Respond with JSON only: {"found":bool,"name":str,"role":str,"headline":str,"basis":str,"low":number,"high":number,"confidence":"low"|"medium"|"high","used_sources":[int]}. "role" = job title + company. "basis" = one sentence on WHY this range (equity, exits, salary, or "no strong public basis"). "used_sources" = indices of the web results you relied on (empty if none).',
+    `Real X profile:\n- Handle: @${profile.userName}\n- Name: ${profile.name}\n- Followers: ${(profile.followers || 0).toLocaleString()}\n- Bio: "${profile.description || 'n/a'}"\n- Self-reported location: ${loc || 'n/a'}\n- Linked site: ${link || 'n/a'}${searchBlock}\n\nWho are they, and what is a defensible personal net worth range?`
   );
   if (!j || j.found === false || !(j.low > 0 || j.high > 0)) return null;
-  // sources are REAL only: the person's X profile + their own linked site. We
-  // never surface GLM-claimed citation URLs (it fabricates them without search).
-  const sources = ['https://x.com/' + profile.userName];
-  if (/^https?:\/\//i.test(link)) sources.push(link);
+  // sources are REAL only: the actual search-result URLs GLM cited, plus the
+  // person's X profile + linked site. GLM-claimed URLs are never surfaced.
+  const cited = Array.isArray(j.used_sources) ? j.used_sources.map((i) => hits[i - 1] && hits[i - 1].link).filter(Boolean) : [];
+  const sources = [...new Set([...cited, 'https://x.com/' + profile.userName, /^https?:\/\//i.test(link) ? link : null].filter(Boolean))].slice(0, 5);
   return {
     name: j.name || profile.name,
     role: String(j.role || '').slice(0, 120),
     headline: String(j.headline || '').slice(0, 200),
     basis: String(j.basis || '').slice(0, 200),
     location: loc,                                   // echo REAL location, never GLM's
-    verdict: 'ai-researched', confidence: j.confidence === 'high' ? 'medium' : 'low', // cap: unverified
+    verdict: grounded ? 'web-researched' : 'ai-researched',
+    // search grounding earns up to medium; ungrounded stays capped at low
+    confidence: grounded ? (j.confidence === 'high' ? 'high' : j.confidence || 'low') : (j.confidence === 'high' ? 'medium' : 'low'),
     low: Math.round(j.low), high: Math.round(j.high),
     sources,
   };
