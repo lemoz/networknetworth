@@ -143,9 +143,7 @@
     <button class="btn" id="go">Estimate fortune</button>
     <button class="btn ghost" id="lucky">🎲 Surprise me</button>
   </div>
-  <p class="hint" id="hint">Researched accounts get an evidence-based dossier. Everyone else gets a live estimate: we sample their real followers and apply wealth rates measured on 1,400+ researched accounts. For entertainment and research.</p>
-  <label class="toggle"><input type="checkbox" id="realmode"/><span>🛰️ Live mode — pull real followers from X (rate-limited)</span></label>
-  <label class="toggle"><input type="checkbox" id="researchmode"/><span>🔬 Dossier mode only — evidence-based boards (best: <b>@cdossman</b>)</span></label>
+  <p class="hint" id="hint">Drop in any X / Twitter handle. Researched accounts open an evidence-based board; everyone else gets a live estimate built from their real followers and wealth rates measured across 1,400+ researched accounts. Speculative estimates, for entertainment and research.</p>
   <div id="err" class="err"></div>
 
   <div class="panel populating" id="populating" style="display:none">
@@ -215,9 +213,8 @@
   </div>
 
   <p class="footer">
-    <b>NetWorkNetWorth</b> (NWNW) estimates are <b>speculative guesses for entertainment and research</b> — nobody's actual net worth is known here.<br/>
-    Toy mode invents numbers deterministically from the handle. Live mode uses public follower counts only.
-    Researched dossiers are AI-compiled from public sources and carry wide error bars; verdicts and ranges are opinions, not facts.<br/>
+    <b>NetWorkNetWorth</b> (NWNW) figures are <b>speculative estimates for entertainment and research</b> — nobody's actual net worth is known here.<br/>
+    Boards are AI-compiled from public sources and carry wide error bars; every range is a guess, not a fact.<br/>
     Not financial data. Not financial advice. If you're listed and want out, ping <a href="https://x.com/cdossman" style="color:#aab2c8">@cdossman</a> and you'll be removed. Don't @ your accountant.
   </p>
 </div>
@@ -744,9 +741,9 @@ function run(raw){
   hidePopulating();
   // shareable URL: reflect the searched board in the address bar
   try{history.replaceState(null,"","/b/"+handle);}catch(e){}
-  if($("researchmode")&&$("researchmode").checked) runResearch(handle);
-  else if($("realmode")&&$("realmode").checked) runReal(handle);
-  else runAuto(handle);
+  // single path: curated board if it exists, else a real on-demand build, else
+  // an honest "in the queue" message. Never the invented-number toy model.
+  runAuto(handle);
 }
 
 /* sample chips */
