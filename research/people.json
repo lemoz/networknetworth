@@ -275,6 +275,17 @@
   "kind": "owner"
  },
  {
+  "handle": "swyx",
+  "name": "Shawn Wang",
+  "low": 20000000,
+  "high": 60000000,
+  "verdict": "plausible",
+  "confidence": "low",
+  "headline": "Founder of Smol AI and AI Engineer; range inferred from an undisclosed Cognition deal, angel activity, and career earnings",
+  "source": "https://swyx.io/cognition",
+  "kind": "owner"
+ },
+ {
   "handle": "tszzl",
   "name": "roon",
   "low": 3000000,
@@ -1306,17 +1317,6 @@
   "confidence": "low",
   "headline": "CEO of Web3Intelligence.com (founded 2017, ~$4.5M raised from Gate.io/DAO Maker/Shima Capital per CBInsights); prior career building crypto/digital-asset infras",
   "source": "https://x.com/karimweb3",
-  "kind": "person"
- },
- {
-  "handle": "MattMealiffeMD",
-  "name": "Matt Mealiffe",
-  "low": 500000,
-  "high": 2500000,
-  "verdict": "overstated",
-  "confidence": "medium",
-  "headline": "Physician executive and medical geneticist; Sr. Medical Director at Ultragenyx Pharmaceutical; co-founder of Alameda Biotherapeutics; prior roles at BioMarin, B",
-  "source": "https://about.me/mealiffe",
   "kind": "person"
  }
 ]

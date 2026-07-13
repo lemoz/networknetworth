@@ -5,7 +5,54 @@
     "verdict": "plausible", "confidence": "medium", "low": 50000000, "high": 150000000,
     "sources": ["https://futuresearch.ai/ai-researcher-net-worth/", "https://networthpublic.com/andrej-karpathy-net-worth-biography-career/"]
   },
-  "swyx": { "found": false, "name": "Shawn Wang" },
+  "swyx": {
+    "found": true, "name": "Shawn Wang",
+    "headline": "Founder of Smol AI and AI Engineer; range inferred from an undisclosed Cognition deal, angel activity, and career earnings",
+    "verdict": "plausible", "confidence": "low", "low": 20000000, "high": 60000000,
+    "sources": ["https://swyx.io/cognition", "https://swyx.io/about"]
+  },
+  "crystalhuang": {
+    "found": true, "name": "Crystal Huang",
+    "headline": "General Partner at GV; range inferred from senior venture compensation and carry, with no disclosed personal holdings",
+    "verdict": "plausible", "confidence": "low", "low": 5000000, "high": 15000000,
+    "sources": ["https://www.gv.com/news/new-general-partners", "https://www.gv.com/team?team=investing-team"]
+  },
+  "cshorten30": {
+    "found": true, "name": "Connor Shorten",
+    "headline": "Product researcher at Weaviate; range inferred from career earnings and possible employee equity, neither publicly disclosed",
+    "verdict": "plausible", "confidence": "low", "low": 300000, "high": 1500000,
+    "sources": ["https://weaviate.io/papers/authors", "https://weaviate.io/blog/authors"]
+  },
+  "ericzelikman": {
+    "found": true, "name": "Eric Zelikman",
+    "headline": "Humans& co-founder; range inferred from a hypothetical 5–15% stake at the reported $4.48B post-money valuation",
+    "verdict": "plausible", "confidence": "low", "low": 200000000, "high": 700000000,
+    "sources": ["https://techcrunch.com/2026/01/20/humans-a-human-centric-ai-startup-founded-by-anthropic-xai-google-alums-raised-480m-seed-round/", "https://news.crunchbase.com/ai/humans-raises-huge-seed-round-unicorn-valuation/"]
+  },
+  "jumbld": {
+    "found": true, "name": "Rohit Agarwal",
+    "headline": "Portkey co-founder and CEO; range inferred from a reported $120M–$140M acquisition and undisclosed founder ownership",
+    "verdict": "plausible", "confidence": "low", "low": 15000000, "high": 40000000,
+    "sources": ["https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-completes-acquisition-of-portkey-to-secure-ai-agents", "https://www.techtimes.com/articles/317470/20260531/enterprise-ai-agent-stack-takes-shape-asana-palo-alto-buy-execution-security-layers.htm"]
+  },
+  "mathemagic1an": {
+    "found": true, "name": "Jay Hack",
+    "headline": "Founder of Codegen and Mira Beauty; range inferred from two acquisitions whose ownership and full proceeds were not disclosed",
+    "verdict": "plausible", "confidence": "low", "low": 15000000, "high": 40000000,
+    "sources": ["https://www.jay.ai/", "https://www.businesswire.com/news/home/20251223327889/en/ClickUp-Acquires-Cursor-Competitor-Codegen-to-Supercharge-AI-Super-Agents", "https://app.dealroom.co/companies/mira_beauty"]
+  },
+  "nathanbenaich": {
+    "found": true, "name": "Nathan Benaich",
+    "headline": "Founder and solo GP of Air Street Capital; range inferred from management economics and carry across roughly $400M in reported assets under management",
+    "verdict": "plausible", "confidence": "low", "low": 30000000, "high": 120000000,
+    "sources": ["https://www.airstreet.com/"]
+  },
+  "saivc_": {
+    "found": true, "name": "Sai Senthilkumar",
+    "headline": "Partner at Redpoint; range inferred from career compensation and carried interest, with no disclosed personal holdings",
+    "verdict": "plausible", "confidence": "low", "low": 2000000, "high": 10000000,
+    "sources": ["https://www.redpoint.com/our-people/sai-senthilkumar/"]
+  },
   "tobi": {
     "found": true, "name": "Tobi Lütke",
     "headline": "Founder and CEO of Shopify, e-commerce billionaire",

@@ -85,8 +85,17 @@ function assertOnlyKeys(value, allowed, label) {
 
 try {
   const sourceHtml = readFileSync(join(root, 'index.html'), 'utf8');
+  const ownerWorths = JSON.parse(readFileSync(join(root, 'tools', 'owner_worths.json'), 'utf8'));
   const inlineScripts = [...sourceHtml.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/gi)].map((m) => m[1]).filter(Boolean);
   for (const [index, source] of inlineScripts.entries()) new vm.Script(source, { filename: `index-inline-${index}.js` });
+  assert(sourceHtml.includes('Owner estimate unavailable'));
+  for (const handle of ['crystalhuang', 'cshorten30', 'ericzelikman', 'jumbld', 'mathemagic1an', 'nathanbenaich', 'saivc_', 'swyx']) {
+    const owner = ownerWorths[handle];
+    assert.equal(owner?.found, true, `missing owner backfill for @${handle}`);
+    assert.equal(owner.confidence, 'low', `@${handle} owner backfill must remain low confidence`);
+    assert(owner.low > 0 && owner.high >= owner.low, `invalid owner backfill range for @${handle}`);
+    assert(Array.isArray(owner.sources) && owner.sources.length > 0, `missing owner backfill sources for @${handle}`);
+  }
   for (const phrase of [
     'a guess, not a fact',
     'speculative estimate for entertainment',
@@ -177,6 +186,14 @@ try {
   assert.equal(boardData.meta.owner.high, 10_000_000);
   assert.match(boardData.meta.owner.estimateLabel, /not a verified fact/i);
   assert.match(boardData.meta.estimate.estimateLabel, /not a verified fact/i);
+
+  const swyxDataResponse = await request('/research/swyx.json');
+  assert.equal(swyxDataResponse.status, 200);
+  const swyxData = await swyxDataResponse.json();
+  assert.equal(swyxData.meta.name, 'Shawn Wang');
+  assert.equal(swyxData.meta.owner.low, 20_000_000);
+  assert.equal(swyxData.meta.owner.high, 60_000_000);
+  assert.equal(swyxData.meta.owner.confidence, 'low');
 
   const indexDataResponse = await request('/research/index.json');
   assert.equal(indexDataResponse.status, 200);

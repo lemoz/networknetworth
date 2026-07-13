@@ -486,7 +486,7 @@ function researchD(handle,data){
   const sumMid=ppl.reduce((s,x)=>s+x.nw,0);
   const top=ppl.length?ppl[0].nw:0;
   const o=M.owner;
-  let ownLine='';
+  let ownLine='<span class="ownmeta">Owner estimate unavailable</span>';
   if(o){
     const src=(o.sources||[]).map((u,i)=>'<a class="srclink" href="'+esc(u)+'" target="_blank" rel="noopener">'+(i===0?'𝕏':'🔗')+'</a>').join(' ');
     const conf=o.confidence?(' · '+esc(o.confidence)+' confidence'):'';

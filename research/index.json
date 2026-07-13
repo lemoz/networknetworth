@@ -209,12 +209,16 @@
  },
  {
   "handle": "swyx",
-  "name": "@swyx",
+  "name": "Shawn Wang",
   "total": 386962250,
   "est": 3984252261.4020047,
   "followers": 172173,
   "researched": 214,
-  "identified": 214
+  "identified": 214,
+  "owner": {
+   "low": 20000000,
+   "high": 60000000
+  }
  },
  {
   "handle": "chamath",

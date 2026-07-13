@@ -1,11 +1,23 @@
 {
  "meta": {
   "account": "swyx",
-  "name": "@swyx",
+  "name": "Shawn Wang",
   "totalFollowers": 172173,
   "researched": 214,
   "identified": 214,
   "note": "Board seeded from the cross-account researched pool: every entry verified as a follower via the X follow-relationship API. Evidence-based ranges with adversarial verification.",
+  "owner": {
+   "name": "Shawn Wang",
+   "headline": "Founder of Smol AI and AI Engineer; range inferred from an undisclosed Cognition deal, angel activity, and career earnings",
+   "verdict": "plausible",
+   "confidence": "low",
+   "low": 20000000,
+   "high": 60000000,
+   "sources": [
+    "https://swyx.io/cognition",
+    "https://swyx.io/about"
+   ]
+  },
   "sampleDist": {
    "sampled": 2000,
    "b0": 1822,
